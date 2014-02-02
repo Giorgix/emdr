@@ -1,0 +1,13 @@
+{% extends 'page/page.html' %}
+
+{% set page_title = 'El molar de Rus.' %}
+
+{% block page %}
+  {% with page_title = page_title %}
+    {% include 'header/header.html' %}
+  {% endwith %}
+  {% include 'content/_themes/content--tpl-home.html' %} 
+  {% include 'footer/footer.html' %} 
+{% endblock %}
+
+

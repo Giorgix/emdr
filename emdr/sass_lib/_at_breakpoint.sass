@@ -1,0 +1,10 @@
+$breakpoint_small: 800px
+$breakpoint_large: 600px
+
+=at_breakpoint($breakpoint)
+  @if $breakpoint == 'palm'
+    @media only screen and (max-width: 599px)
+      @content
+  @if $breakpoint == 'desk'
+    @media only screen and (min-width: $breakpoint_large)
+      @content

@@ -1,0 +1,18 @@
+@import '../../sass_lib/flag'
+@import '../../sass_lib/island'
+
+.products
+  +island
+  border: 1px solid black
+
+.product__name
+  +island
+
+.product
+  @extend %flag
+
+.product__image
+  @extend %flag__mast
+
+.product__name
+  @extend %flag__banner
