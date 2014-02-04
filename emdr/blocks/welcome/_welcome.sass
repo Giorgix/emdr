@@ -12,21 +12,20 @@
 
 @import '../../sass_lib/island'
 
-.welcome
-  //border: 1px solid black
+.welcome-message
   +island
 
 +at-breakpoint('palm')
-  .welcome
-    background: $very-soft url('../images/icons/olives.png') no-repeat right bottom
-    background-size: 75px 75px
+  .welcome-message__text
+    background: $very-soft /*url('../images/icons/olives.png') no-repeat right bottom*/
+    //background-size: 75px 75px
     +deca
     +soft-font
     color: $very-loud
 
-.welcome strong
+.welcome-message__text strong
   +contrast-font
   font-weight: 700
 
-.welcome__image
+.welcome-message__image
   max-width: 100%

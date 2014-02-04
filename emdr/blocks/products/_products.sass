@@ -11,14 +11,14 @@
     margin: 0 auto
     max-height: 96px
     max-width: 96px
+    position: relative
+    top: -48px
 
   .product__image img
-    margin: -48px auto 0
     height: 96px
     width: 96px
 
   .product__name
-    //+island
     +hecto
     +loud-font
     color: $very-soft
@@ -30,7 +30,8 @@
     +unit
     +very-soft-font
     color: $very-soft
-    
+    text-align: center
+
   .product__details strong
     +contrast-font
     

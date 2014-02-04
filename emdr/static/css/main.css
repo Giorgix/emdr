@@ -9,7 +9,7 @@
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 17, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -151,22 +151,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 /* line 15, ../../blocks/header/_header.sass */
 .header {
-  height: 48px;
   background-color: #3e606f;
 }
 
-/* line 1, ../../blocks/title/_title.sass */
+/* line 2, ../../blocks/title/_title.sass */
 .title {
-  float: left;
   padding: 12px;
   margin-bottom: 12px;
+  display: inline-block;
+  width: 60%;
 }
 /* line 18, ../../sass_lib/_island.sass */
 .title > :last-child {
   margin-bottom: 0;
 }
 
-/* line 4, ../../blocks/title/_title.sass */
+/* line 7, ../../blocks/title/_title.sass */
 .title__link {
   font-size: 24.876px;
   line-height: 0.965;
@@ -238,10 +238,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 /* line 15, ../../blocks/nav/_nav.sass */
 .nav {
-  float: right;
+  display: inline-block;
+  width: 25%;
+  text-align: right;
 }
 
-/* line 18, ../../blocks/nav/_nav.sass */
+/* line 20, ../../blocks/nav/_nav.sass */
 .nav__icon {
   display: hidden;
   width: 30px;
@@ -249,13 +251,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: #91aa9d url(../images/menu-icon.png);
 }
 
-/* line 25, ../../blocks/nav/_nav.sass */
+/* line 27, ../../blocks/nav/_nav.sass */
 .nav__icon:hover {
   background-color: #1f2324;
   border-radius: 4px 4px 0 0;
 }
 
-/* line 29, ../../blocks/nav/_nav.sass */
+/* line 31, ../../blocks/nav/_nav.sass */
 .nav, .nav__item {
   padding: 12px;
   margin-bottom: 12px;
@@ -265,7 +267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 0;
 }
 
-/* line 32, ../../blocks/nav/_nav.sass */
+/* line 34, ../../blocks/nav/_nav.sass */
 .nav__item {
   display: inline-block;
   float: left;
@@ -275,30 +277,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-transform: uppercase;
 }
 
-/* line 39, ../../blocks/nav/_nav.sass */
+/* line 41, ../../blocks/nav/_nav.sass */
 .nav__link:link {
   color: #d1dbbd;
 }
-/* line 41, ../../blocks/nav/_nav.sass */
+/* line 43, ../../blocks/nav/_nav.sass */
 .nav__link:visited {
   color: #91aa9d;
 }
-/* line 43, ../../blocks/nav/_nav.sass */
+/* line 45, ../../blocks/nav/_nav.sass */
 .nav__link:hover {
   color: #193441;
 }
-/* line 45, ../../blocks/nav/_nav.sass */
+/* line 47, ../../blocks/nav/_nav.sass */
 .nav__link:active {
   color: #fcfff5;
 }
 
 @media only screen and (max-width: 599px) {
-  /* line 50, ../../blocks/nav/_nav.sass */
+  /* line 52, ../../blocks/nav/_nav.sass */
   .nav__icon {
     display: inline-block;
   }
 
-  /* line 53, ../../blocks/nav/_nav.sass */
+  /* line 55, ../../blocks/nav/_nav.sass */
   .nav__list, .nav:active .nav__list {
     display: none;
     position: absolute;
@@ -315,14 +317,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border-radius: 4px 0 4px 4px;
   }
 
-  /* line 64, ../../blocks/nav/_nav.sass */
+  /* line 66, ../../blocks/nav/_nav.sass */
   .nav__item {
     width: 100%;
     padding: 10px 0;
     text-transform: capitalize;
   }
 
-  /* line 70, ../../blocks/nav/_nav.sass */
+  /* line 72, ../../blocks/nav/_nav.sass */
   .nav:hover .nav__list {
     display: block;
   }
@@ -350,20 +352,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *
  *------------------------------------------------------------------- */
 /* line 15, ../../blocks/welcome/_welcome.sass */
-.welcome {
+.welcome-message {
   padding: 12px;
   margin-bottom: 12px;
 }
 /* line 18, ../../sass_lib/_island.sass */
-.welcome > :last-child {
+.welcome-message > :last-child {
   margin-bottom: 0;
 }
 
 @media only screen and (max-width: 599px) {
-  /* line 20, ../../blocks/welcome/_welcome.sass */
-  .welcome {
-    background: #fcfff5 url("../images/icons/olives.png") no-repeat right bottom;
-    background-size: 75px 75px;
+  /* line 19, ../../blocks/welcome/_welcome.sass */
+  .welcome-message__text {
+    background: #fcfff5;
     font-size: 18.662px;
     line-height: 1.286;
     font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
@@ -372,16 +373,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #1f2324;
   }
 }
-/* line 27, ../../blocks/welcome/_welcome.sass */
-.welcome strong {
+/* line 26, ../../blocks/welcome/_welcome.sass */
+.welcome-message__text strong {
   font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 31, ../../blocks/welcome/_welcome.sass */
-.welcome__image {
+/* line 30, ../../blocks/welcome/_welcome.sass */
+.welcome-message__image {
   max-width: 100%;
 }
 
@@ -515,16 +516,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 0 auto;
     max-height: 96px;
     max-width: 96px;
+    position: relative;
+    top: -48px;
   }
 
-  /* line 15, ../../blocks/products/_products.sass */
+  /* line 17, ../../blocks/products/_products.sass */
   .product__image img {
-    margin: -48px auto 0;
     height: 96px;
     width: 96px;
   }
 
-  /* line 20, ../../blocks/products/_products.sass */
+  /* line 21, ../../blocks/products/_products.sass */
   .product__name {
     font-size: 21.328px;
     line-height: 1.125;
@@ -546,20 +548,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-weight: 300;
     font-style: normal;
     color: #fcfff5;
+    text-align: center;
   }
   /* line 18, ../../sass_lib/_island.sass */
   .product__details > :last-child {
     margin-bottom: 0;
   }
 
-  /* line 34, ../../blocks/products/_products.sass */
+  /* line 35, ../../blocks/products/_products.sass */
   .product__details strong {
     font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 
-  /* line 37, ../../blocks/products/_products.sass */
+  /* line 38, ../../blocks/products/_products.sass */
   .product__details em {
     font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
     font-weight: 400;
@@ -629,6 +632,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 35px !important;
 }
 
+/*
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -651,12 +663,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 30, ../../blocks/main.sass */
+/* line 31, ../../blocks/main.sass */
 .page {
   background: #193441 url("../images/page.png");
 }
 
-/* line 34, ../../blocks/main.sass */
+/* line 35, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }
