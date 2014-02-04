@@ -362,7 +362,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @media only screen and (max-width: 599px) {
   /* line 20, ../../blocks/welcome/_welcome.sass */
   .welcome {
-    background: #fcfff5 url(../images/box-bg.png) repeat;
+    background: #fcfff5 url("../images/icons/olives.png") no-repeat right bottom;
+    background-size: 75px 75px;
     font-size: 18.662px;
     line-height: 1.286;
     font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
@@ -371,7 +372,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #1f2324;
   }
 }
-/* line 26, ../../blocks/welcome/_welcome.sass */
+/* line 27, ../../blocks/welcome/_welcome.sass */
 .welcome strong {
   font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
   font-weight: 700;
@@ -379,7 +380,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 700;
 }
 
-/* line 30, ../../blocks/welcome/_welcome.sass */
+/* line 31, ../../blocks/welcome/_welcome.sass */
 .welcome__image {
   max-width: 100%;
 }
@@ -419,7 +420,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 /* line 17, ../../blocks/featured/_featured.sass */
 .featured {
-  background: #3e606f url(../images/box-bg.png) repeat;
+  background: #3e606f url("../images/icons/grapes.png") no-repeat right bottom;
+  background-size: 75px 75px;
   margin-bottom: 48px;
 }
 /* line 16, ../../sass_lib/_gravity.sass */
@@ -427,7 +429,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 0;
 }
 
-/* line 21, ../../blocks/featured/_featured.sass */
+/* line 22, ../../blocks/featured/_featured.sass */
 .featured__tag-line {
   padding: 12px;
   margin-bottom: 12px;
@@ -455,6 +457,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
+/* line 13, ../../sass_lib/_flag.sass */
+.footer {
+  display: table;
+  width: 100%;
+}
+/* line 17, ../../sass_lib/_flag.sass */
+.footer .footer__text, .footer .footer__social {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 31, ../../sass_lib/_flag.sass */
+.footer .footer__text > img {
+  display: block;
+  max-width: none;
+}
+/* line 35, ../../sass_lib/_flag.sass */
+.footer .footer__social {
+  width: 100%;
+}
+
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -491,16 +513,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* line 10, ../../blocks/products/_products.sass */
   .product__image {
     margin: 0 auto;
-    max-height: 84px;
-    max-width: 84px;
+    max-height: 96px;
+    max-width: 96px;
   }
 
   /* line 15, ../../blocks/products/_products.sass */
   .product__image img {
-    margin: -42px auto 0;
+    margin: -48px auto 0;
+    height: 96px;
+    width: 96px;
   }
 
-  /* line 18, ../../blocks/products/_products.sass */
+  /* line 20, ../../blocks/products/_products.sass */
   .product__name {
     font-size: 21.328px;
     line-height: 1.125;
@@ -512,7 +536,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
   }
 
-  /* line 26, ../../blocks/products/_products.sass */
+  /* line 28, ../../blocks/products/_products.sass */
   .product__details {
     padding: 12px;
     margin-bottom: 12px;
@@ -528,14 +552,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
-  /* line 32, ../../blocks/products/_products.sass */
+  /* line 34, ../../blocks/products/_products.sass */
   .product__details strong {
     font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 
-  /* line 35, ../../blocks/products/_products.sass */
+  /* line 37, ../../blocks/products/_products.sass */
   .product__details em {
     font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
     font-weight: 400;
@@ -553,15 +577,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 12, ../../blocks/footer/_footer.sass */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 13, ../../sass_lib/_flag.sass */
+.footer {
+  display: table;
+  width: 100%;
+}
+/* line 17, ../../sass_lib/_flag.sass */
+.footer .footer__text, .footer .footer__social {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 31, ../../sass_lib/_flag.sass */
+.footer .footer__text > img {
+  display: block;
+  max-width: none;
+}
+/* line 35, ../../sass_lib/_flag.sass */
+.footer .footer__social {
+  width: 100%;
+}
+
+/* line 14, ../../blocks/footer/_footer.sass */
 .footer {
   background-color: #1f2324;
 }
 
-/* line 15, ../../blocks/footer/_footer.sass */
+/* line 18, ../../blocks/footer/_footer.sass */
 .footer__text {
-  padding: 12px;
-  margin-bottom: 12px;
   font-size: 14px;
   line-height: 1.714;
   font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
@@ -569,9 +622,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
   color: #d1dbbd;
 }
-/* line 18, ../../sass_lib/_island.sass */
-.footer__text > :last-child {
-  margin-bottom: 0;
+
+/* line 25, ../../blocks/footer/_footer.sass */
+.footer__social {
+  height: 35px;
+  width: 35px !important;
 }
 
 /*------------------------------------------------------------------
@@ -598,7 +653,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 /* line 30, ../../blocks/main.sass */
 .page {
-  background-color: #193441;
+  background: #193441 url("../images/page.png");
 }
 
 /* line 34, ../../blocks/main.sass */

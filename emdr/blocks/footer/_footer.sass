@@ -9,11 +9,20 @@
  * Acknowledgments:
  *
  *-------------------------------------------------------------------*/
+@import '../sass_lib/flag'
+
 .footer
+  @extend %flag
   background-color: $very-loud
 
 .footer__text
-  +island
+  //+island
   +deci
   +soft-font
   color: $moderately-soft
+  @extend %flag__mast
+
+.footer__social
+  @extend %flag__banner
+  height: 35px
+  width: 35px !important
