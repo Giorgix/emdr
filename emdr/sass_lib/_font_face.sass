@@ -1,0 +1,17 @@
+/*----- mixin font-face ------*/
+
+=font-face($font-name, $font-url, $weight: normal, $style: normal)
+  @font-face 
+    font-family: '#{$font-name}'
+    src: url('#{$font-url}.eot')
+    src: url('#{$font-url}.eot?#iefix') format('embedded-opentype'),url('#{$font-url}.woff') format('woff'), url('#{$font-url}.ttf') format('truetype'),  url('#{$font-url}.svg##{$font-name}') format('svg')
+    font-weight: $weight
+    font-style: $style
+    
+/*------------ typography  loader -----------*/
+
++font-face(Trajan, "../web-fonts/Trajan")
++font-face(Aleo-Light, "../web-fonts/AleoL", 300)
++font-face(Aleo-Bold, "../web-fonts/AleoB", 700)
++font-face(Aleo-Italic, "../web-fonts/AleoLI", 400, italic)
++font-face(Aleo-Regular, "../web-fonts/AleoR") 

@@ -12,9 +12,60 @@
 
 @import '../../sass_lib/island'
 
-.nav__list, .nav__item
+.nav
+  float: right
+
+.nav__icon
+  display: hidden
+  width: 30px
+  height: 30px
+  background: $soft url(../images/menu-icon.png)
+
+.nav__icon
+  &:hover
+    background-color: $very-loud
+    border-radius: 4px 4px 0 0
+
+.nav, .nav__item
   +island
 
+.nav__item
+  display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
+  float: left
+  +soft-font
+  text-transform: uppercase
   
 .nav__link
-  display: block
+  &:link
+    color: $moderately-soft
+  &:visited
+    color: $soft
+  &:hover
+    color: $loud
+  &:active
+    color: $very-soft
+    
+
++at-breakpoint('palm')
+  .nav__icon 
+    display: inline-block
+  
+  .nav__list, .nav:active .nav__list 
+    display: none
+    position: absolute
+    padding: 20px
+    background: $very-soft
+    border: 5px solid $very-loud
+    right: 1px
+    top: 42px
+    width: 30%
+    +border-radius(4px 0 4px 4px)
+  
+  .nav__item 
+    //text-align: center
+    width: 100%
+    padding: 10px 0
+    text-transform: capitalize
+  
+  .nav:hover .nav__list 
+    display: block

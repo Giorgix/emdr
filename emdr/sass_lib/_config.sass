@@ -1,0 +1,111 @@
+@import 'font_face'
+
+// Font sizes
+=unit
+  font-size: 16px
+  line-height: 1.5
+
+=deci
+  font-size: 14px
+  line-height: 1.714
+  
+=deca
+  font-size: 18.662px
+  line-height: 1.286
+
+=hecto
+  font-size: 21.328px
+  line-height: 1.125
+
+=kilo
+  font-size: 24.876px
+  line-height: 0.965
+=mega
+  font-size: 28.430px
+  line-height: 1.688
+
+// Font families
+=sans-serif--light
+  font-family: Aleo-Light, Verdana, Geneva, sans-serif
+  font-weight: 300
+  font-style: normal
+
+=sans-serif--regular
+  font-family: Aleo-Regular, Verdana, Geneva, sans-serif
+  font-weight: 400
+  font-style: normal
+  
+=serif--regular
+  font-family: Trajan, Georgia, serif
+  font-weight: 400
+  font-style: normal
+  
+=sans-serif--bold
+  font-family: Aleo-Bold, Verdana, Geneva, sans-serif
+  font-weight: 700
+  font-style: normal
+  
+=sans-serif--italic
+  font-family: Aleo-Italic, Verdana, Geneva, sans-serif
+  font-weight: 400
+  font-style: italic
+
+
+//Font styles
+
+=very-soft-font
+  +sans-serif--light
+
+//moderately-soft-font:
+
+=soft-font
+  +sans-serif--regular
+
+//moderately-loud-font:
+
+=loud-font
+  +serif--regular
+
+//very-loud-font:
+
+=emphasize-font
+  +sans-serif--italic
+
+=contrast-font
+  +sans-serif--bold
+
+//STANDARD COLOR VARIABLES
+
+$white: #FFFFFF
+$darker-grey: #262626
+$black: #000000
+
+//THEMES
+
+//Neutral Blue
+
+$NB-theme-light-grey: #FCFFF5
+$NB-theme-medium-grey: #D1DBBD
+$NB-theme-light-blue: #91AA9D
+$NB-theme-dark-blue: #3E606F
+$NB-theme-darker-blue: #193441
+$NB-theme-dark-blue-black: #1F2324
+
+
+//COLOR ELEMENTS FROM SOFTER TO LOUDER
+ 
+$very-soft: $NB-theme-light-grey
+$moderately-soft: $NB-theme-medium-grey
+$soft: $NB-theme-light-blue
+$moderately-loud: $NB-theme-dark-blue
+$loud: $NB-theme-darker-blue
+$very-loud: $NB-theme-dark-blue-black
+
+//COLOR ELEMENTS TO EMPHASIZE
+ 
+$emphasize: $white
+//$contrast:
+
+//EFFECTS
+
+$default-text-shadow-color: #000000

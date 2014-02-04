@@ -11,6 +11,10 @@
  *-------------------------------------------------------------------*/
 
 @import 'compass/reset'
+@import 'compass/css3/text-shadow'
+@import 'compass/css3/border-radius'
+@import '../sass_lib/config'
+@import '../sass_lib/at_breakpoint'
 @import 'home/home'
 @import '../sass_lib/island'
 
@@ -21,6 +25,13 @@
 //  -o-background-size: cover
 //  background-size: cover
 
-.header, .content,  .footer
+.page
+  background-color: $loud
+
+.content,  .footer
   +island
   border: 1px solid black
+
+//this should be in the reset sheet
+a
+  text-decoration: none
