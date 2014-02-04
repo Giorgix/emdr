@@ -9,6 +9,9 @@
           <div class="product__name">
             <p>vino</p>
           </div>
+	  <div class="product__details">
+           <p>Los vinos son <strong>tintos de producción ecológica</strong>, hechos con uva de nuestros propios viñedos,tanto de variedades internacionales como propias de la región.</p>
+          </div>
         </a>
       </li>
       
@@ -20,8 +23,25 @@
           <div class="product__name">
             <p>aceite</p>
           </div>
+          <div class="product__details">
+            <p>El <strong>aceite</strong> de oliva es <strong>virgen extra</strong> de la variedad <em>Arbequina</em>.</p>  
+	  </div>
         </a>
       </li>
-    
+    <li class="products__item">
+        <a class="products__link product" href="#">
+          <div class="product__image">
+            <img src="{{ url_for('static', filename='images/product__tourism.png') }}" />
+          </div>  
+          <div class="product__name">
+            <p>turismo</p>
+          </div>
+          <div class="product__details">
+	 <p>El Molar de Rus está emplazado en un <strong>antiguo caserío de labranza</strong> típico de la región, hoy
+    convertida en finca de agroturismo.</p> 
+         </div>
+        </a>
+      </li>
+ 
     </ul>
   </section>

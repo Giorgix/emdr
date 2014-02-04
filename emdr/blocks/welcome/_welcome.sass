@@ -13,5 +13,19 @@
 @import '../../sass_lib/island'
 
 .welcome
-  border: 1px solid black
+  //border: 1px solid black
   +island
+
++at-breakpoint('palm')
+  .welcome
+    background: $very-soft url(../images/box-bg.png) repeat
+    +deca
+    +soft-font
+    color: $very-loud
+
+.welcome strong
+  +contrast-font
+  font-weight: 700
+
+.welcome__image
+  max-width: 100%
