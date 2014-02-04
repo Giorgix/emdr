@@ -2,12 +2,6 @@
 @import '../../sass_lib/island'
 @import '../../sass_lib/gravity'
 
-.products
-  //+island
-  //border: 1px solid black
-
-
-
 +at-breakpoint('palm')
   .products__item
     background-color: $moderately-loud
@@ -31,6 +25,7 @@
 
   .product__details
     +island
+    +unit
     +very-soft-font
     color: $very-soft
     

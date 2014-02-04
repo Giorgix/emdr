@@ -349,102 +349,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-@media only screen and (max-width: 599px) {
-  /* line 12, ../../blocks/products/_products.sass */
-  .products__item {
-    background-color: #3e606f;
-    margin-bottom: 48px;
-  }
-  /* line 16, ../../sass_lib/_gravity.sass */
-  .products__item > :last-child {
-    margin-bottom: 0;
-  }
-
-  /* line 16, ../../blocks/products/_products.sass */
-  .product__image {
-    margin: 0 auto;
-    max-height: 84px;
-    max-width: 84px;
-  }
-
-  /* line 21, ../../blocks/products/_products.sass */
-  .product__image img {
-    margin: -42px auto 0;
-  }
-
-  /* line 24, ../../blocks/products/_products.sass */
-  .product__name {
-    font-size: 21.328px;
-    line-height: 1.125;
-    font-family: Trajan, Georgia, serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #fcfff5;
-    text-shadow: 0px 0px 1px black;
-    text-align: center;
-  }
-
-  /* line 32, ../../blocks/products/_products.sass */
-  .product__details {
-    padding: 12px;
-    margin-bottom: 12px;
-    font-family: Aleo-Light, Verdana, Geneva, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #fcfff5;
-  }
-  /* line 18, ../../sass_lib/_island.sass */
-  .product__details > :last-child {
-    margin-bottom: 0;
-  }
-
-  /* line 37, ../../blocks/products/_products.sass */
-  .product__details strong {
-    font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  /* line 40, ../../blocks/products/_products.sass */
-  .product__details em {
-    font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-}
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
 /* line 15, ../../blocks/welcome/_welcome.sass */
 .welcome {
   padding: 12px;
@@ -562,23 +466,142 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+@media only screen and (max-width: 599px) {
+  /* line 6, ../../blocks/products/_products.sass */
+  .products__item {
+    background-color: #3e606f;
+    margin-bottom: 48px;
+  }
+  /* line 16, ../../sass_lib/_gravity.sass */
+  .products__item > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 10, ../../blocks/products/_products.sass */
+  .product__image {
+    margin: 0 auto;
+    max-height: 84px;
+    max-width: 84px;
+  }
+
+  /* line 15, ../../blocks/products/_products.sass */
+  .product__image img {
+    margin: -42px auto 0;
+  }
+
+  /* line 18, ../../blocks/products/_products.sass */
+  .product__name {
+    font-size: 21.328px;
+    line-height: 1.125;
+    font-family: Trajan, Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fcfff5;
+    text-shadow: 0px 0px 1px black;
+    text-align: center;
+  }
+
+  /* line 26, ../../blocks/products/_products.sass */
+  .product__details {
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Aleo-Light, Verdana, Geneva, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fcfff5;
+  }
+  /* line 18, ../../sass_lib/_island.sass */
+  .product__details > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 32, ../../blocks/products/_products.sass */
+  .product__details strong {
+    font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* line 35, ../../blocks/products/_products.sass */
+  .product__details em {
+    font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 12, ../../blocks/footer/_footer.sass */
+.footer {
+  background-color: #1f2324;
+}
+
+/* line 15, ../../blocks/footer/_footer.sass */
+.footer__text {
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.714;
+  font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #d1dbbd;
+}
+/* line 18, ../../sass_lib/_island.sass */
+.footer__text > :last-child {
+  margin-bottom: 0;
+}
+
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
 /* line 30, ../../blocks/main.sass */
 .page {
   background-color: #193441;
 }
 
-/* line 33, ../../blocks/main.sass */
-.footer {
-  padding: 12px;
-  margin-bottom: 12px;
-  border: 1px solid black;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.footer > :last-child {
-  margin-bottom: 0;
-}
-
-/* line 38, ../../blocks/main.sass */
+/* line 34, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }
