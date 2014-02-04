@@ -10,19 +10,17 @@
  *
  *-------------------------------------------------------------------*/
 
-@import '../../sass_lib/island'
-@import '../../sass_lib/gravity'
+=gravity--size-big
+  margin-bottom: 48px
 
+  & > :last-child
+    margin-bottom: 0
 
-.featured
-  background: $moderately-loud url(../images/box-bg.png) repeat
-  +gravity--size-big
+=gravity--size-normal
+  margin-bottom: 24px
 
-.featured__tag-line
-  //border: 1px solid black
-  +island
-  +hecto
-  +loud-font
-  color: $very-soft
-  +text-shadow
-
+=gravity--size-small
+  margin-bottom: 12px
+  
+=gravity--size-very-small
+  margin-bottom: 1px

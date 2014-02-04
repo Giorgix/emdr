@@ -338,26 +338,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 13, ../../sass_lib/_flag.sass */
-.product {
-  display: table;
-  width: 100%;
-}
-/* line 17, ../../sass_lib/_flag.sass */
-.product .product__image, .product .product__name {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 31, ../../sass_lib/_flag.sass */
-.product .product__image > img {
-  display: block;
-  max-width: none;
-}
-/* line 35, ../../sass_lib/_flag.sass */
-.product .product__name {
-  width: 100%;
-}
-
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -369,26 +349,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 4, ../../blocks/products/_products.sass */
-.products {
-  padding: 12px;
-  margin-bottom: 12px;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.products > :last-child {
-  margin-bottom: 0;
-}
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+@media only screen and (max-width: 599px) {
+  /* line 12, ../../blocks/products/_products.sass */
+  .products__item {
+    background-color: #3e606f;
+    margin-bottom: 48px;
+  }
+  /* line 16, ../../sass_lib/_gravity.sass */
+  .products__item > :last-child {
+    margin-bottom: 0;
+  }
 
-/* line 8, ../../blocks/products/_products.sass */
-.product__name {
-  padding: 12px;
-  margin-bottom: 12px;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.product__name > :last-child {
-  margin-bottom: 0;
-}
+  /* line 16, ../../blocks/products/_products.sass */
+  .product__image {
+    margin: 0 auto;
+    max-height: 84px;
+    max-width: 84px;
+  }
 
+  /* line 21, ../../blocks/products/_products.sass */
+  .product__image img {
+    margin: -42px auto 0;
+  }
+
+  /* line 24, ../../blocks/products/_products.sass */
+  .product__name {
+    font-size: 21.328px;
+    line-height: 1.125;
+    font-family: Trajan, Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fcfff5;
+    text-shadow: 0px 0px 1px black;
+    text-align: center;
+  }
+
+  /* line 32, ../../blocks/products/_products.sass */
+  .product__details {
+    padding: 12px;
+    margin-bottom: 12px;
+    font-family: Aleo-Light, Verdana, Geneva, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fcfff5;
+  }
+  /* line 18, ../../sass_lib/_island.sass */
+  .product__details > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 37, ../../blocks/products/_products.sass */
+  .product__details strong {
+    font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* line 40, ../../blocks/products/_products.sass */
+  .product__details em {
+    font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -468,12 +502,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 15, ../../blocks/featured/_featured.sass */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 17, ../../blocks/featured/_featured.sass */
 .featured {
   background: #3e606f url(../images/box-bg.png) repeat;
+  margin-bottom: 48px;
+}
+/* line 16, ../../sass_lib/_gravity.sass */
+.featured > :last-child {
+  margin-bottom: 0;
 }
 
-/* line 18, ../../blocks/featured/_featured.sass */
+/* line 21, ../../blocks/featured/_featured.sass */
 .featured__tag-line {
   padding: 12px;
   margin-bottom: 12px;
@@ -501,12 +551,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 28, ../../blocks/main.sass */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 30, ../../blocks/main.sass */
 .page {
   background-color: #193441;
 }
 
-/* line 31, ../../blocks/main.sass */
+/* line 33, ../../blocks/main.sass */
 .footer {
   padding: 12px;
   margin-bottom: 12px;
@@ -517,7 +578,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 0;
 }
 
-/* line 36, ../../blocks/main.sass */
+/* line 38, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }

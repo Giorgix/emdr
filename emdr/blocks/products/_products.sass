@@ -1,18 +1,41 @@
 @import '../../sass_lib/flag'
 @import '../../sass_lib/island'
+@import '../../sass_lib/gravity'
 
 .products
-  +island
+  //+island
   //border: 1px solid black
 
-.product__name
-  +island
 
-.product
-  @extend %flag
 
-.product__image
-  @extend %flag__mast
++at-breakpoint('palm')
+  .products__item
+    background-color: $moderately-loud
+    +gravity--size-big
+  
+  .product__image
+    margin: 0 auto
+    max-height: 84px
+    max-width: 84px
 
-.product__name
-  @extend %flag__banner
+  .product__image img
+    margin: -42px auto 0
+
+  .product__name
+    //+island
+    +hecto
+    +loud-font
+    color: $very-soft
+    +text-shadow
+    text-align: center
+
+  .product__details
+    +island
+    +very-soft-font
+    color: $very-soft
+    
+  .product__details strong
+    +contrast-font
+    
+  .product__details em
+    +emphasize-font
