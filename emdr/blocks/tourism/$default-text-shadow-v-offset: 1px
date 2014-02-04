@@ -13,25 +13,15 @@
 @import '../../sass_lib/island'
 
 .welcome-message
-  //+island
+  +island
 
 +at-breakpoint('palm')
-  .welcome-message__title
-    +island
-    //background: $moderately-loud
-    +kilo
-    +loud-font
-    color: $very-soft
-    text-align: center
-    +text-shadow
-
   .welcome-message__text
-    +island
-    background: $very-loud /*url('../images/icons/olives.png') no-repeat right bottom*/
+    background: $very-soft /*url('../images/icons/olives.png') no-repeat right bottom*/
     //background-size: 75px 75px
     +deca
     +soft-font
-    color: $very-soft
+    color: $very-loud
 
 .welcome-message__text strong
   +contrast-font
