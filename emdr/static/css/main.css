@@ -149,16 +149,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 15, ../../blocks/header/_header.sass */
-.header {
-  background-color: #3e606f;
-}
-
 /* line 2, ../../blocks/title/_title.sass */
 .title {
   padding: 12px;
   margin-bottom: 12px;
   display: inline-block;
+  background-color: #1f2324;
   width: 75%;
 }
 /* line 18, ../../sass_lib/_island.sass */
@@ -166,7 +162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 0;
 }
 
-/* line 7, ../../blocks/title/_title.sass */
+/* line 8, ../../blocks/title/_title.sass */
 .title__link {
   font-size: 24.876px;
   line-height: 0.965;
@@ -239,18 +235,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 15, ../../blocks/nav/_nav.sass */
 .nav {
   display: inline-block;
+  width: 8%;
+  text-align: right;
 }
 
 /* line 21, ../../blocks/nav/_nav.sass */
 .nav__icon {
   display: hidden;
-  width: 45px;
-  height: 45px;
-  background: url(../images/menu-icon.png);
+  width: 30px;
+  height: 30px;
+  background: url(../images/menu-icon.png) no-repeat center;
+  background-size: 24px 24px;
   vertical-align: middle;
+  margin: -10px 0 0 10px;
 }
 
-/* line 30, ../../blocks/nav/_nav.sass */
+/* line 32, ../../blocks/nav/_nav.sass */
 .nav__icon:hover {
   background-color: #1f2324;
   -webkit-border-radius: 4px 4px 0 0;
@@ -260,7 +260,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 4px 4px 0 0;
 }
 
-/* line 34, ../../blocks/nav/_nav.sass */
+/* line 36, ../../blocks/nav/_nav.sass */
 .nav__item {
   display: inline-block;
   font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
@@ -270,30 +270,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: left;
 }
 
-/* line 41, ../../blocks/nav/_nav.sass */
+/* line 43, ../../blocks/nav/_nav.sass */
 .nav__link:link {
   color: #d1dbbd;
 }
-/* line 43, ../../blocks/nav/_nav.sass */
-.nav__link:visited {
-  color: #91aa9d;
-}
 /* line 45, ../../blocks/nav/_nav.sass */
+.nav__link:visited {
+  color: #1f2324;
+}
+/* line 47, ../../blocks/nav/_nav.sass */
 .nav__link:hover {
   color: #193441;
 }
-/* line 47, ../../blocks/nav/_nav.sass */
+/* line 49, ../../blocks/nav/_nav.sass */
 .nav__link:active {
-  color: #fcfff5;
+  color: #3e606f;
 }
 
 @media only screen and (max-width: 599px) {
-  /* line 52, ../../blocks/nav/_nav.sass */
+  /* line 54, ../../blocks/nav/_nav.sass */
   .nav__icon {
     display: inline-block;
   }
 
-  /* line 55, ../../blocks/nav/_nav.sass */
+  /* line 57, ../../blocks/nav/_nav.sass */
   .nav__list, .nav:active .nav__list {
     display: none;
     position: absolute;
@@ -301,16 +301,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: #fcfff5;
     border: 5px solid #1f2324;
     right: 1px;
-    top: 44px;
+    top: 38px;
     width: 30%;
     -webkit-border-radius: 4px 0 4px 4px;
     -moz-border-radius: 4px 0 4px 4px;
     -ms-border-radius: 4px 0 4px 4px;
     -o-border-radius: 4px 0 4px 4px;
     border-radius: 4px 0 4px 4px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
   }
 
-  /* line 66, ../../blocks/nav/_nav.sass */
+  /* line 69, ../../blocks/nav/_nav.sass */
   .nav__item {
     text-align: left;
     width: 100%;
@@ -318,7 +320,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-transform: capitalize;
   }
 
-  /* line 72, ../../blocks/nav/_nav.sass */
+  /* line 75, ../../blocks/nav/_nav.sass */
   .nav:hover .nav__list {
     display: block;
   }
@@ -376,27 +378,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-weight: 400;
     font-style: normal;
     color: #fcfff5;
+    margin-bottom: 0;
   }
   /* line 18, ../../sass_lib/_island.sass */
   .welcome-message__text > :last-child {
     margin-bottom: 0;
   }
 }
-/* line 36, ../../blocks/welcome/_welcome.sass */
+/* line 37, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text strong {
   font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 39, ../../blocks/welcome/_welcome.sass */
+/* line 40, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text em {
   font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 42, ../../blocks/welcome/_welcome.sass */
+/* line 43, ../../blocks/welcome/_welcome.sass */
 .welcome-message__image {
   max-width: 100%;
 }
@@ -747,12 +750,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 31, ../../blocks/main.sass */
+/* line 32, ../../blocks/main.sass */
 .page {
   background: #193441 url("../images/page.png");
 }
 
-/* line 35, ../../blocks/main.sass */
+/* line 36, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }
