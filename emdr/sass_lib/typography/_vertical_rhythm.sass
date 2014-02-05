@@ -12,4 +12,5 @@
 
 @function adjust-line-height($font-size, $base-line-height)
   $font-size: strip-units($font-size)
-  @return $base-line-height / $font-size
+  $base-line-height: strip-units($base-line-height)
+  @return ($base-line-height / $font-size)
