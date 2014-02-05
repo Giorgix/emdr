@@ -14,28 +14,28 @@
 
 .nav
   display: inline-block
-  width: 15%
-  text-align: right
+  //+island
+  //width: 8%
+  //text-align: right
 
 .nav__icon
   display: hidden
-  width: 30px
-  height: 30px
-  background: $soft url(../images/menu-icon.png)
+  width: 45px
+  height: 45px
+  background: url(../images/menu-icon.png)
+  //+border-radius(4px 4px 4px 4px)
+  vertical-align: middle //TODO align the icon with the title
 
 .nav__icon
   &:hover
     background-color: $very-loud
-    border-radius: 4px 4px 0 0
-
-.nav, .nav__item
-  +island
+    +border-radius(4px 4px 0 0)
 
 .nav__item
   display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
-  float: left
-  +soft-font
+  +primary--regular
   text-transform: uppercase
+  text-align: left
   
 .nav__link
   &:link
@@ -59,7 +59,7 @@
     background: $very-soft
     border: 5px solid $very-loud
     right: 1px
-    top: 42px
+    top: 44px
     width: 30%
     +border-radius(4px 0 4px 4px)
   

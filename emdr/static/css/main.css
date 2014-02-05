@@ -159,7 +159,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 12px;
   margin-bottom: 12px;
   display: inline-block;
-  width: 70%;
+  width: 75%;
 }
 /* line 18, ../../sass_lib/_island.sass */
 .title > :last-child {
@@ -239,42 +239,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 15, ../../blocks/nav/_nav.sass */
 .nav {
   display: inline-block;
-  width: 15%;
-  text-align: right;
 }
 
-/* line 20, ../../blocks/nav/_nav.sass */
+/* line 21, ../../blocks/nav/_nav.sass */
 .nav__icon {
   display: hidden;
-  width: 30px;
-  height: 30px;
-  background: #91aa9d url(../images/menu-icon.png);
+  width: 45px;
+  height: 45px;
+  background: url(../images/menu-icon.png);
+  vertical-align: middle;
 }
 
-/* line 27, ../../blocks/nav/_nav.sass */
+/* line 30, ../../blocks/nav/_nav.sass */
 .nav__icon:hover {
   background-color: #1f2324;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
-}
-
-/* line 31, ../../blocks/nav/_nav.sass */
-.nav, .nav__item {
-  padding: 12px;
-  margin-bottom: 12px;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.nav > :last-child, .nav__item > :last-child {
-  margin-bottom: 0;
 }
 
 /* line 34, ../../blocks/nav/_nav.sass */
 .nav__item {
   display: inline-block;
-  float: left;
   font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+  text-align: left;
 }
 
 /* line 41, ../../blocks/nav/_nav.sass */
@@ -308,7 +301,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background: #fcfff5;
     border: 5px solid #1f2324;
     right: 1px;
-    top: 42px;
+    top: 44px;
     width: 30%;
     -webkit-border-radius: 4px 0 4px 4px;
     -moz-border-radius: 4px 0 4px 4px;
@@ -524,6 +517,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 @media only screen and (max-width: 599px) {
   /* line 6, ../../blocks/products/_products.sass */
+  .products__title {
+    padding: 12px;
+    margin-bottom: 48px;
+    font-size: 24.876px;
+    line-height: 0.965;
+    font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #d1dbbd;
+    text-shadow: 0px 0px 1px black;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  /* line 16, ../../sass_lib/_gravity.sass */
+  .products__title > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 16, ../../blocks/products/_products.sass */
   .products__item {
     background-color: #3e606f;
     margin-bottom: 48px;
@@ -533,7 +545,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
-  /* line 10, ../../blocks/products/_products.sass */
+  /* line 20, ../../blocks/products/_products.sass */
   .product__image {
     margin: 0 auto;
     max-height: 96px;
@@ -542,13 +554,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     top: -48px;
   }
 
-  /* line 17, ../../blocks/products/_products.sass */
+  /* line 27, ../../blocks/products/_products.sass */
   .product__image img {
     height: 96px;
     width: 96px;
   }
 
-  /* line 21, ../../blocks/products/_products.sass */
+  /* line 31, ../../blocks/products/_products.sass */
   .product__name {
     font-size: 21.328px;
     line-height: 1.125;
@@ -561,7 +573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: -48px 0 0 0;
   }
 
-  /* line 29, ../../blocks/products/_products.sass */
+  /* line 39, ../../blocks/products/_products.sass */
   .product__details {
     padding: 12px;
     margin-bottom: 12px;
@@ -578,14 +590,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
-  /* line 36, ../../blocks/products/_products.sass */
+  /* line 46, ../../blocks/products/_products.sass */
   .product__details strong {
     font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 
-  /* line 39, ../../blocks/products/_products.sass */
+  /* line 49, ../../blocks/products/_products.sass */
   .product__details em {
     font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
     font-weight: 400;

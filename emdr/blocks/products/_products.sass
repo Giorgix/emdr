@@ -3,6 +3,16 @@
 @import '../../sass_lib/gravity'
 
 +at-breakpoint('palm')
+  .products__title
+    padding: 12px //TODO make a mixin for other type of island
+    +gravity--size-big
+    +kilo
+    +primary--regular
+    color: $moderately-soft
+    +text-shadow
+    text-align: center
+    text-transform: capitalize
+
   .products__item
     background-color: $moderately-loud
     +gravity--size-big
@@ -20,7 +30,7 @@
 
   .product__name
     +hecto
-    +loud-font
+    +secondary--regular
     color: $very-soft
     +text-shadow
     text-align: center
@@ -29,12 +39,12 @@
   .product__details
     +island
     +unit
-    +very-soft-font
+    +primary--light
     color: $very-soft
     text-align: center
 
   .product__details strong
-    +contrast-font
+    +primary--bold
     
   .product__details em
-    +emphasize-font
+    +primary--italic
