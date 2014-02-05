@@ -8,5 +8,28 @@
   </head>
   <body class="page">
     {% block page %}{% endblock %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      // move this code to his own block
+      $('.showcase-menu__link').click(function(event) {
+        event.preventDefault();
+       
+	// deactivate the current panel
+        current_panel = $('.showcase__panel--state-activate');
+	current_panel.removeClass('showcase__panel--state-activate');
+	
+
+	link = $(this).attr('href');
+        panel_name = link.replace('#', ''); 
+        panel_name = '.showcase__panel.' + panel_name; 
+
+        // show the activate panel	
+	panel_active = $(panel_name);
+        panel_active.addClass('showcase__panel--state-activate');
+
+        // hold hover state for link
+	//$(this).addClass('showcase-menu__link--state-activate');
+      }) 
+    </script>
   </body>
 </html>

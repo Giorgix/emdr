@@ -1,0 +1,51 @@
+.showcase
+  width: 960px
+  height: 350px
+  margin: 0  auto
+  background: red
+  position: relative // triggers a new positioning context
+
+.showcase-content
+  width: 950px
+  height: 350px
+  
+//
+
+.showcase__panel
+  height: 100%
+  display: none
+
+.showcase__panel--state-activate
+  display: block
+
+.showcase__panle--state-deactivate
+  display: none
+
+.welcome-message
+  background: url('../images/welcome-message__image.jpg')
+
+//
+
+.showcase-menu
+  width: 210px
+  height: 350px
+  position: absolute
+  right: 0
+  top: 0
+
+.showcase-menu__link
+  height: 70px
+  display: block
+  padding-left: 20px
+  text-align: center
+  line-height: 70px 
+  background: url('../images/showcase-menu__link.png') rgba(0, 0, 0, 0)
+
+//.showcase-menu__link--state-deactivate
+//  background-position: 0 70px 
+
+//.showcase-menu__link--state-activate
+//  background-position: 0 - 70px
+
+.showcase-menu__link:hover
+  background-position: 0 -70px

@@ -9,7 +9,7 @@
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 17, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -160,28 +160,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 2, ../../blocks/title/_title.sass */
-.title {
-  padding: 12px;
-  margin-bottom: 12px;
-  display: inline-block;
-  background-color: #1f2324;
-  width: 75%;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.title > :last-child {
-  margin-bottom: 0;
-}
-
-/* line 8, ../../blocks/title/_title.sass */
-.title__link {
-  font-size: 24.876px;
-  line-height: 0.965;
-  font-family: Trajan, Georgia, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #fcfff5;
-  text-shadow: 0px 0px 1px black;
+/* line 15, ../../blocks/header/_header.sass */
+.header {
+  width: 960px;
+  height: 194px;
+  margin: 0 auto;
 }
 
 /*------------------------------------------------------------------
@@ -208,17 +191,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 /* line 15, ../../blocks/logo/_logo.sass */
 .logo {
-  padding: 12px;
-  margin-bottom: 12px;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.logo > :last-child {
-  margin-bottom: 0;
+  display: inline-block;
 }
 
 /* line 18, ../../blocks/logo/_logo.sass */
 .logo__image {
-  max-width: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+/* line 2, ../../blocks/title/_title.sass */
+.title {
+  display: inline-block;
+  position: relative;
+  top: -30px;
+}
+
+/* line 10, ../../blocks/title/_title.sass */
+.title__link {
+  font-size: 24.876px;
+  line-height: 0.965;
+  font-family: Trajan, Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fcfff5;
+  text-shadow: 0px 0px 1px black;
+}
+
+/* line 1, ../../blocks/content/_content.sass */
+.content {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 30px;
+  background: white;
 }
 
 /*------------------------------------------------------------------
@@ -243,247 +248,96 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 15, ../../blocks/nav/_nav.sass */
+/*.nav
+ * display: inline-block
+ * //+island
+ * width: 8%
+ * 
+ *text-align: right
+ *
+ *.nav__icon
+ * display: hidden
+ * width: 30px
+ * height: 30px
+ * background: url(../images/menu-icon.png) no-repeat center
+ * background-size: 24px 24px
+ * //+border-radius(4px 4px 4px 4px)
+ * vertical-align: middle //TODO align the icon with the title
+ * margin: -10px 0 0 10px 
+ *
+ *.nav__icon
+ * &:hover
+ *   background-color: $very-loud
+ *   +border-radius(4px 4px 0 0)
+ *
+ *.nav__item
+ * display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
+ * +primary--regular
+ * text-transform: uppercase
+ * //text-align: left
+ * 
+ *.nav__link
+ * &:link
+ *   color: $moderately-soft
+ * &:visited
+ *   color: $very-loud
+ * &:hover
+ *   color: $loud
+ * &:active
+ *   color: $moderately-loud
+ *   
+ */
+/*+at-breakpoint('palm')
+ * .nav__icon 
+ *   display: inline-block
+ * 
+ * .nav__list, .nav:active .nav__list 
+ *   display: none
+ *   position: absolute
+ *   padding: 20px
+ *   background: $very-soft
+ *   border: 5px solid $very-loud
+ *   right: 1px
+ *   top: 38px
+ *   width: 50%
+ *   z-index: 1
+ *   +border-radius(4px 0 4px 4px)
+ *   +opacity(0.9)
+ * 
+ * .nav__item 
+ *   text-align: center
+ *   width: 100%
+ *   padding: 10px 0
+ *   text-transform: capitalize
+ * 
+ * .nav:hover .nav__list 
+ *   display: block
+ */
+/* line 85, ../../blocks/nav/_nav.sass */
 .nav {
+  position: relative;
+  bottom: 0;
+}
+
+/* line 89, ../../blocks/nav/_nav.sass */
+.nav__list {
+  background: #291704;
+  text-align: justify;
+  font-size: 0;
+}
+
+/* line 94, ../../blocks/nav/_nav.sass */
+.nav__list:after {
+  content: " ";
+  width: 100%;
   display: inline-block;
-  width: 8%;
-  text-align: right;
 }
 
-/* line 21, ../../blocks/nav/_nav.sass */
-.nav__icon {
-  display: hidden;
-  width: 30px;
-  height: 30px;
-  background: url(../images/menu-icon.png) no-repeat center;
-  background-size: 24px 24px;
-  vertical-align: middle;
-  margin: -10px 0 0 10px;
-}
-
-/* line 32, ../../blocks/nav/_nav.sass */
-.nav__icon:hover {
-  background-color: #1f2324;
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  -ms-border-radius: 4px 4px 0 0;
-  -o-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-}
-
-/* line 36, ../../blocks/nav/_nav.sass */
+/* line 99, ../../blocks/nav/_nav.sass */
 .nav__item {
+  font-size: 16px;
   display: inline-block;
-  font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-/* line 43, ../../blocks/nav/_nav.sass */
-.nav__link:link {
-  color: #d1dbbd;
-}
-/* line 45, ../../blocks/nav/_nav.sass */
-.nav__link:visited {
-  color: #1f2324;
-}
-/* line 47, ../../blocks/nav/_nav.sass */
-.nav__link:hover {
-  color: #193441;
-}
-/* line 49, ../../blocks/nav/_nav.sass */
-.nav__link:active {
-  color: #3e606f;
-}
-
-@media only screen and (max-width: 599px) {
-  /* line 54, ../../blocks/nav/_nav.sass */
-  .nav__icon {
-    display: inline-block;
-  }
-
-  /* line 57, ../../blocks/nav/_nav.sass */
-  .nav__list, .nav:active .nav__list {
-    display: none;
-    position: absolute;
-    padding: 20px;
-    background: #fcfff5;
-    border: 5px solid #1f2324;
-    right: 1px;
-    top: 38px;
-    width: 50%;
-    z-index: 1;
-    -webkit-border-radius: 4px 0 4px 4px;
-    -moz-border-radius: 4px 0 4px 4px;
-    -ms-border-radius: 4px 0 4px 4px;
-    -o-border-radius: 4px 0 4px 4px;
-    border-radius: 4px 0 4px 4px;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-    opacity: 0.9;
-  }
-
-  /* line 70, ../../blocks/nav/_nav.sass */
-  .nav__item {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-    text-transform: capitalize;
-  }
-
-  /* line 76, ../../blocks/nav/_nav.sass */
-  .nav:hover .nav__list {
-    display: block;
-  }
-}
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 15, ../../blocks/welcome/_welcome.sass */
-.welcome-message {
-  background: url("../images/welcome__image.jpg") no-repeat;
-  background-size: cover;
-  margin-bottom: 24px;
-}
-
-@media only screen and (max-width: 599px) {
-  /* line 21, ../../blocks/welcome/_welcome.sass */
-  .welcome-message__title {
-    padding: 12px;
-    margin-bottom: 12px;
-    margin-bottom: 24px;
-    font-size: 24.876px;
-    line-height: 0.965;
-    font-family: Trajan, Georgia, serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #fcfff5;
-    text-align: center;
-    text-shadow: 0px 0px 1px black;
-  }
-  /* line 18, ../../sass_lib/_island.sass */
-  .welcome-message__title > :last-child {
-    margin-bottom: 0;
-  }
-
-  /* line 31, ../../blocks/welcome/_welcome.sass */
-  .welcome-message__text {
-    padding: 12px;
-    margin-bottom: 12px;
-    background: #1f2324;
-    background-size: 75px 75px;
-    font-size: 18.662px;
-    line-height: 1.286;
-    font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #fcfff5;
-    margin-bottom: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
-    opacity: 0.85;
-  }
-  /* line 18, ../../sass_lib/_island.sass */
-  .welcome-message__text > :last-child {
-    margin-bottom: 0;
-  }
-}
-/* line 41, ../../blocks/welcome/_welcome.sass */
-.welcome-message__text strong {
-  font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* line 44, ../../blocks/welcome/_welcome.sass */
-.welcome-message__text em {
-  font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* line 47, ../../blocks/welcome/_welcome.sass */
-.welcome-message__image {
-  max-width: 100%;
-}
-
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 17, ../../blocks/featured/_featured.sass */
-.featured {
-  background: #3e606f url("../images/icons/grapes.png") no-repeat right bottom;
-  background-size: 75px 75px;
-  margin-bottom: 48px;
-}
-/* line 16, ../../sass_lib/_gravity.sass */
-.featured > :last-child {
-  margin-bottom: 0;
-}
-
-/* line 22, ../../blocks/featured/_featured.sass */
-.featured__tag-line {
   padding: 12px;
-  margin-bottom: 12px;
-  font-size: 21.328px;
-  line-height: 1.125;
-  font-family: Trajan, Georgia, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #fcfff5;
-  text-shadow: 0px 0px 1px black;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.featured__tag-line > :last-child {
-  margin-bottom: 0;
 }
 
 /*------------------------------------------------------------------
@@ -497,26 +351,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 13, ../../sass_lib/_flag.sass */
-.footer {
-  display: table;
-  width: 100%;
-}
-/* line 17, ../../sass_lib/_flag.sass */
-.footer .footer__text, .footer .footer__social {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 31, ../../sass_lib/_flag.sass */
-.footer .footer__text > img {
-  display: block;
-  max-width: none;
-}
-/* line 35, ../../sass_lib/_flag.sass */
-.footer .footer__social {
-  width: 100%;
-}
-
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *
@@ -628,116 +462,130 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: italic;
   }
 }
-/* line 1, ../../blocks/tourism/_tourism.sass */
-.tourism {
-  padding: 12px;
-  margin-bottom: 12px;
-  background: #1f2324 url("../images/icons/tourism-cabin.png") no-repeat right;
-  background-size: 100px 100px;
+/* line 54, ../../blocks/products/_products.sass */
+.products {
+  padding: 30px;
+}
+
+/* line 57, ../../blocks/products/_products.sass */
+.products-message {
+  width: 260px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 63, ../../blocks/products/_products.sass */
+.products__list {
+  width: 630px;
+  display: inline-block;
+  text-align: justify;
+  font-size: 0;
+}
+
+/* line 70, ../../blocks/products/_products.sass */
+.products__list:after {
+  content: " ";
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 76, ../../blocks/products/_products.sass */
+.products__item {
+  width: 138px;
+  display: inline-block;
+  vertical-align: top;
   font-size: 16px;
-  line-height: 1.5;
-  font-family: Aleo-Light, Verdana, Geneva, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #fcfff5;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.tourism > :last-child {
-  margin-bottom: 0;
+  text-align: left;
 }
 
-/* line 9, ../../blocks/tourism/_tourism.sass */
-.tourism strong {
-  font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/*.tourism
+ * +island
+ * background: $very-loud url('../images/icons/tourism-cabin.png') no-repeat right
+ * background-size: 100px 100px
+ * +unit
+ * +primary--light
+ * color: $very-soft
+ *
+ *.tourism strong
+ * +primary--bold
+ *
+ *.tourism em
+ * +primary--italic
+ *
+ *.tourism__title
+ * +island
+ * text-align: center
+ * //background-color: $soft
+ * +kilo
+ * +secondary--regular
+ * color: $moderately-soft
+ * //+single-text-shadow($very-soft)
+ */
+/* line 26, ../../blocks/tourism/_tourism.sass */
+.tourism {
+  padding: 30px;
+  background: red;
+  height: 300px;
 }
 
-/* line 12, ../../blocks/tourism/_tourism.sass */
-.tourism em {
-  font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
-  font-weight: 400;
-  font-style: italic;
+/* line 1, ../../blocks/showcase/_showcase.sass */
+.showcase {
+  width: 960px;
+  height: 350px;
+  margin: 0 auto;
+  background: red;
+  position: relative;
 }
 
-/* line 15, ../../blocks/tourism/_tourism.sass */
-.tourism__title {
-  padding: 12px;
-  margin-bottom: 12px;
-  text-align: center;
-  font-size: 24.876px;
-  line-height: 0.965;
-  font-family: Trajan, Georgia, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #d1dbbd;
-}
-/* line 18, ../../sass_lib/_island.sass */
-.tourism__title > :last-child {
-  margin-bottom: 0;
+/* line 8, ../../blocks/showcase/_showcase.sass */
+.showcase-content {
+  width: 950px;
+  height: 350px;
 }
 
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 13, ../../sass_lib/_flag.sass */
-.footer {
-  display: table;
-  width: 100%;
+/* line 14, ../../blocks/showcase/_showcase.sass */
+.showcase__panel {
+  height: 100%;
+  display: none;
 }
-/* line 17, ../../sass_lib/_flag.sass */
-.footer .footer__text, .footer .footer__social {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 31, ../../sass_lib/_flag.sass */
-.footer .footer__text > img {
+
+/* line 18, ../../blocks/showcase/_showcase.sass */
+.showcase__panel--state-activate {
   display: block;
-  max-width: none;
-}
-/* line 35, ../../sass_lib/_flag.sass */
-.footer .footer__social {
-  width: 100%;
 }
 
-/* line 14, ../../blocks/footer/_footer.sass */
-.footer {
-  background-color: black;
+/* line 21, ../../blocks/showcase/_showcase.sass */
+.showcase__panle--state-deactivate {
+  display: none;
 }
 
-/* line 18, ../../blocks/footer/_footer.sass */
-.footer__text {
-  font-size: 14px;
-  line-height: 1.714;
-  font-family: Aleo-Regular, Verdana, Geneva, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #d1dbbd;
+/* line 24, ../../blocks/showcase/_showcase.sass */
+.welcome-message {
+  background: url("../images/welcome-message__image.jpg");
 }
 
-/* line 25, ../../blocks/footer/_footer.sass */
-.footer__social {
-  height: 35px;
-  width: 35px !important;
+/* line 29, ../../blocks/showcase/_showcase.sass */
+.showcase-menu {
+  width: 210px;
+  height: 350px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 36, ../../blocks/showcase/_showcase.sass */
+.showcase-menu__link {
+  height: 70px;
+  display: block;
+  padding-left: 20px;
+  text-align: center;
+  line-height: 70px;
+  background: url("../images/showcase-menu__link.png") rgba(0, 0, 0, 0);
+}
+
+/* line 50, ../../blocks/showcase/_showcase.sass */
+.showcase-menu__link:hover {
+  background-position: 0 -70px;
 }
 
 /*
@@ -761,11 +609,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *
  *------------------------------------------------------------------- */
 /* line 32, ../../blocks/main.sass */
-.page {
-  background: #193441 url("../images/page.png");
+html {
+  background: #ece2d9;
 }
 
-/* line 36, ../../blocks/main.sass */
+/* line 35, ../../blocks/main.sass */
+body {
+  background-image: url("../images/header__background.gif");
+  background-repeat: repeat-x;
+}
+
+/* line 40, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }

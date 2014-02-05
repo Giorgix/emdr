@@ -1,11 +1,14 @@
 <section class="products">
-	<div class="a"><h3 class="products__title">nuestros productos.</h3></div>
-    <ul class="products__list">
+    <section class="products-message">
+      <h3 class="products__title">Nuestra seleccion.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section><!--
+    --><ul class="products__list">
       
       <li class="products__item">
         <a class="products__link product" href="#"> 
           <div class="product__image">
-            <img src="{{ url_for('static', filename='images/icons/product__wine.png') }}" />
+            <img src="{{ url_for('static', filename='images/product__image-1.jpg') }}" />
           </div>
           <div class="product__name">
             <p>vino</p>
@@ -19,7 +22,35 @@
       <li class="products__item">
         <a class="products__link product" href="#">
           <div class="product__image">
-            <img src="{{ url_for('static', filename='images/icons/product__oil.png') }}" />
+            <img src="{{ url_for('static', filename='images/product__image-2.jpg') }}" />
+          </div>  
+          <div class="product__name">
+            <p>aceite</p>
+          </div>
+          <div class="product__details">
+            <p>El <strong>aceite</strong> de oliva es <strong>virgen extra</strong> de la variedad <em>Arbequina</em>.</p>  
+	  </div>
+        </a>
+      </li>
+
+      <li class="products__item">
+        <a class="products__link product" href="#">
+          <div class="product__image">
+            <img src="{{ url_for('static', filename='images/product__image-3.jpg') }}" />
+          </div>  
+          <div class="product__name">
+            <p>aceite</p>
+          </div>
+          <div class="product__details">
+            <p>El <strong>aceite</strong> de oliva es <strong>virgen extra</strong> de la variedad <em>Arbequina</em>.</p>  
+	  </div>
+        </a>
+      </li>
+
+      <li class="products__item">
+        <a class="products__link product" href="#">
+          <div class="product__image">
+            <img src="{{ url_for('static', filename='images/product__image-4.jpg') }}" />
           </div>  
           <div class="product__name">
             <p>aceite</p>

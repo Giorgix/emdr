@@ -12,66 +12,105 @@
 
 @import '../../sass_lib/island'
 
+/*.nav
+ * display: inline-block
+ * //+island
+ * width: 8%
+ * 
+ *text-align: right
+ *
+ *.nav__icon
+ * display: hidden
+ * width: 30px
+ * height: 30px
+ * background: url(../images/menu-icon.png) no-repeat center
+ * background-size: 24px 24px
+ * //+border-radius(4px 4px 4px 4px)
+ * vertical-align: middle //TODO align the icon with the title
+ * margin: -10px 0 0 10px 
+ *
+ *.nav__icon
+ * &:hover
+ *   background-color: $very-loud
+ *   +border-radius(4px 4px 0 0)
+ *
+ *.nav__item
+ * display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
+ * +primary--regular
+ * text-transform: uppercase
+ * //text-align: left
+ * 
+ *.nav__link
+ * &:link
+ *   color: $moderately-soft
+ * &:visited
+ *   color: $very-loud
+ * &:hover
+ *   color: $loud
+ * &:active
+ *   color: $moderately-loud
+ *   
+ */
+/*+at-breakpoint('palm')
+ * .nav__icon 
+ *   display: inline-block
+ * 
+ * .nav__list, .nav:active .nav__list 
+ *   display: none
+ *   position: absolute
+ *   padding: 20px
+ *   background: $very-soft
+ *   border: 5px solid $very-loud
+ *   right: 1px
+ *   top: 38px
+ *   width: 50%
+ *   z-index: 1
+ *   +border-radius(4px 0 4px 4px)
+ *   +opacity(0.9)
+ * 
+ * .nav__item 
+ *   text-align: center
+ *   width: 100%
+ *   padding: 10px 0
+ *   text-transform: capitalize
+ * 
+ * .nav:hover .nav__list 
+ *   display: block
+ */
+
+
+
+//////
+
 .nav
+  position: relative
+  bottom: 0
+
+.nav__list
+  background: #291704
+  text-align: justify
+  font-size: 0
+
+.nav__list:after
+  content: " "
+  width: 100%
   display: inline-block
-  //+island
-  width: 8%
-  text-align: right
-
-.nav__icon
-  display: hidden
-  width: 30px
-  height: 30px
-  background: url(../images/menu-icon.png) no-repeat center
-  background-size: 24px 24px
-  //+border-radius(4px 4px 4px 4px)
-  vertical-align: middle //TODO align the icon with the title
-  margin: -10px 0 0 10px 
-
-.nav__icon
-  &:hover
-    background-color: $very-loud
-    +border-radius(4px 4px 0 0)
 
 .nav__item
-  display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
-  +primary--regular
-  text-transform: uppercase
-  //text-align: left
-  
-.nav__link
-  &:link
-    color: $moderately-soft
-  &:visited
-    color: $very-loud
-  &:hover
-    color: $loud
-  &:active
-    color: $moderately-loud
-    
+  font-size: 16px
+  display: inline-block
+  padding: 12px
+  //+island
 
-+at-breakpoint('palm')
-  .nav__icon 
-    display: inline-block
-  
-  .nav__list, .nav:active .nav__list 
-    display: none
-    position: absolute
-    padding: 20px
-    background: $very-soft
-    border: 5px solid $very-loud
-    right: 1px
-    top: 38px
-    width: 50%
-    z-index: 1
-    +border-radius(4px 0 4px 4px)
-    +opacity(0.9)
-  
-  .nav__item 
-    text-align: center
-    width: 100%
-    padding: 10px 0
-    text-transform: capitalize
-  
-  .nav:hover .nav__list 
-    display: block
+
+
+
+
+
+
+
+
+
+
+
+
