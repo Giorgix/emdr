@@ -1,0 +1,53 @@
+@function get-ratio($ratio)
+  @if $ratio == 'minor-second' // 15:16
+    @return 1.067
+
+  @if $ratio == 'major-second' // 8:9
+    @return 1.125
+  
+  @if $ratio == 'minor-third' // 5:6
+    @return 1.2
+  
+  @if $ratio == 'major-third' // 4:5
+    @return 1.25
+  
+  @if $ratio == 'perfect-fourth' // 3:4
+    @return 1.333
+  
+  @if $ratio == 'aug-fourth' or $ratio == 'dim-fifth' // 1:sqrt(2)
+    @return 1.414
+  
+  @if $ratio == 'perfect-fifth' // 2:3
+    @return 1.5
+  
+  @if $ratio == 'minor-sixth' // 5:8
+    @return 1.6
+  
+  @if $ratio == 'golden' // 1:1.618
+    @return 1.618
+  
+  @if $ratio == 'major-sixth' // 3:5
+    @return 1.667
+  
+  @if $ratio == 'minor-seventh' // 9:16
+    @return 1.778
+  
+  @if $ratio == 'major-seventh' // 8:15
+    @return 1.875
+  
+  @if $ratio == 'octave' // 1:2
+    @return 2
+  
+  @if $ratio == 'major-tenth' // 2:5
+    @return 2.5
+  
+  @if $ratio == 'major-eleventh' // 3:8
+    @return 2.667
+  
+  @if $ratio == 'major-twelfth' // 1:3
+    @return 3
+  
+  @if $ratio == 'double-octave' // 1:4
+    @return 4
+
+  @warn 'ArgumentError: ratio #{$ratio} unknown.'

@@ -1,0 +1,136 @@
+/*------------------------------------------------------------------
+ * [list methods]
+ *
+ * Project:	Zilean
+ * Version:	0.1
+ * Last change:	18/11/13
+ * Author: twissell
+ * Primary use:	Zilean framework
+ *
+ * TODO:
+ *    slice:
+ *      implement a step param
+ *      allow negative values for start and end params (ala python)
+ *    sort:
+ *      implement a key param
+ *      implement a asc desc param
+ *-------------------------------------------------------------------*/
+
+
+/*
+ * Insert an item at a given position.
+ *
+ * @param $l -> the list that we want to insert 
+ *              the item.
+ * @param $index -> the index of the item before which
+ *                   to insert.
+ * @param $value -> the value to be inserted.
+ * @return -> a new list with the value.
+ */
+@function insert($l, $index, $value)
+  $result: ()
+  @for $i from 1 through length($l)
+    @if $index == $i
+      $result: append($result, $value)
+    $result: append($result, nth($l, $i))
+  @if $index > length($l)
+    $result: append($result, $value)
+  @return $result
+
+/*
+ * delete an item at a given position.
+ *
+ * @param $l -> the list from that we want to
+ *              delete the item.
+ * @param $index -> the index of the item to be
+ *                  deleted
+ * @return -> a new list without the item deleted.
+ * @warn ->   IndexError
+ */
+@function del($l, $index)
+  @if $index > length($l)
+    @warn "IndexError: list #{$l} do not have index #{$index}"
+    @return null
+  $result: ()
+  @for $i from 1 through length($l)
+    @if $i != $index
+      $result: append($result, nth($l, $i))
+  @return $result
+
+/*
+ * removes the first item from the list
+ * that macths value.
+ * 
+ * @param $l -> the list from that we want to
+ *              remove an item.
+ * @param $value -> the value to be removed.
+ * @return -> a new list without the item
+ *            removed.
+ * @warn ValueError
+ */
+@function remove($l, $value)
+  $result: ()
+  $item: null
+  $match: false
+  @for $i from 1 through length($l)
+    $item: nth($l, $i)
+    @if $item != $value
+      $result: append($result, $item)
+    @else if $item == $value and $match == true
+      $result: append($result, $item)
+    @else
+      $match: true
+  @if $match == false
+    @warn "ValueError: value #{$value} not in #{$l}"
+  @return $result
+
+/*
+ * returns a portion of a list.
+ *
+ * @param $l -> the list to be sliced
+ * @param $start -> the index where begin the slice
+ * @param $end -> the index where the slice finish
+ * @return -> a portion of the list
+ */
+@function slice($l, $start, $end)
+  $result: ()
+  @if $start >= $end
+    @return $result
+  @for $i from $start to $end
+    $result: append($result, nth($l, $i))
+  @return $result
+
+/*
+ * swaps two items in a list by index
+ *
+ * @param $l -> the list where the items are.
+ * @param $a-index -> the index of the first element
+ * @param $b-index -> the index of the second element
+ * @return a new list with the elements swaped.
+ */
+@function swap($l, $a-index, $b-index)
+  $result: ()
+  $a-item: nth($l, $a-index)
+  $b-item: nth($l, $b-index)
+  $result: del($l, $a-index)
+  $result: del($result, $b-index)
+  $result: insert($result, $b-index, $a-item)
+  $result: insert($result, $a-index, $b-item)
+  @return $result
+
+/*
+ * sorts a list, uses insertion sort.
+ *
+ * @param -> the list to be sorted.
+ * @return -> a new list in order
+ */
+@function sort($l)
+  $result: $l
+  @for $i from 1 through length($l)
+    $j: $i + 1
+    @if $j > length($l)
+      $j: $i
+    @while $j > 1 and nth($result, $j) < nth($result, $j - 1)
+      $result: swap($result, $j, $j - 1)
+      $j: $j - 1
+  @return $result

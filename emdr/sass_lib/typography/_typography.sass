@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *-------------------------------------------------------------------*/
+
+@import 'ratios'
+@import 'scale'
+@import 'vertical_rhythm'
+
+$base-font-size: 16px
+
+$base-font-size-ratio: 'perfect-fourth'
+$base-font-size--alt: null
+$base-line-height: 1.5
+
+
+/*
+ * creates all the font presets for all the
+ * font prefixes as placeholder classes.
+ *
+ * @param $ratio    -> ratio as a decimal number.
+ * @param $unit     -> base value to build the scale from.
+ * @param $sub-unit -> alternative value to build a double stranded scale.
+ */
+=create-font-presets($ratio, $unit, $sub-unit: null)
+  
+  $scale: scale($ratio, $unit, $sub-unit)
+   
+  @for $i from 1 through length($scale)
+    .#{nth($font-prefixes, $i)}
+      $font-size: nth($scale, $i)
+      font-size: $font-size
+      line-height: adjust-line-height($font-size, $base-line-height)
+
+ 

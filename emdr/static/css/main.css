@@ -608,18 +608,295 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 32, ../../blocks/main.sass */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [Musical scales]
+ *
+ * Project:	Zilean
+ * Version:	0.1
+ * Last change:	19/11/13 
+ * Author:	twissell
+ * Primary use:	Zilean framework
+ * Acknowledgments: Tim Brown (tbrown.org)
+ *
+ * TODO:
+ *    enable the use of two ratios for double-stranded scales
+ *    enable the use of hex numbers as units.
+ *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [list methods]
+ *
+ * Project:	Zilean
+ * Version:	0.1
+ * Last change:	18/11/13
+ * Author: twissell
+ * Primary use:	Zilean framework
+ *
+ * TODO:
+ *    slice:
+ *      implement a step param
+ *      allow negative values for start and end params (ala python)
+ *    sort:
+ *      implement a key param
+ *      implement a asc desc param
+ *------------------------------------------------------------------- */
+/* Insert an item at a given position.
+ *
+ * @param $l -> the list that we want to insert 
+ *              the item.
+ * @param $index -> the index of the item before which
+ *                   to insert.
+ * @param $value -> the value to be inserted.
+ * @return -> a new list with the value.
+ */
+/* delete an item at a given position.
+ *
+ * @param $l -> the list from that we want to
+ *              delete the item.
+ * @param $index -> the index of the item to be
+ *                  deleted
+ * @return -> a new list without the item deleted.
+ * @warn ->   IndexError
+ */
+/* removes the first item from the list
+ * that macths value.
+ * 
+ * @param $l -> the list from that we want to
+ *              remove an item.
+ * @param $value -> the value to be removed.
+ * @return -> a new list without the item
+ *            removed.
+ * @warn ValueError
+ */
+/* returns a portion of a list.
+ *
+ * @param $l -> the list to be sliced
+ * @param $start -> the index where begin the slice
+ * @param $end -> the index where the slice finish
+ * @return -> a portion of the list
+ */
+/* swaps two items in a list by index
+ *
+ * @param $l -> the list where the items are.
+ * @param $a-index -> the index of the first element
+ * @param $b-index -> the index of the second element
+ * @return a new list with the elements swaped.
+ */
+/* sorts a list, uses insertion sort.
+ *
+ * @param -> the list to be sorted.
+ * @return -> a new list in order
+ */
+/* build a single or double stranded scale fro a base value or 
+ * values and a ratio.
+ *
+ * @param $ratio         -> ratio as a decimal number.
+ * @param $unit          -> base value to build the scale from.
+ * @param $sub-unit      -> alternative value to build a double stranded scale.
+ * @param $num-multiples -> number of degrees (multiples) of the scale.
+ * @return               -> the scale sorted with the unit in the middle.
+ * @warn                 -> ArgumentError
+ */
+/* build a single stranded scale from a base value (unit)
+ * and a ratio.
+ *
+ * @param $ratio         -> ratio as decimal number.
+ * @param $unit          -> base value to build the scale from.
+ * @param $num-multiples -> number of degrees (multiples) of the scale.
+ * @return               -> the scale sorted with the unit in the middle.
+ */
+/* build a double stranded scale from two base values (units)
+ * and a ratio.
+ *
+ * @param $ratio         -> ratio as decimal number
+ * @param $unit          -> base value to build the scale from,
+ * @param $sub-unit      -> alternative value to build a double stranded scale.
+ * @param $num-multiples -> number of degrees (multiples) of the scale.
+ * @return               -> the scale sorted with the unit in the middle.
+ */
+/* returns a list of multiples or submultiples for a 
+ * given number.
+ * 
+ * @param $ratio         -> ratio as a decimal number
+ * @param $unit          -> base value for multiple calculations
+ * @param $factor        -> multiple/sub-multiple
+ * @param $num-multiples -> number of multiples to work out
+ * @return               -> a list with all the multiples, not
+ *                          include the unit.
+ */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name 
+ *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [Unit related functions Stylesheet]
+ *
+ * Project:	Zilean
+ * Version:	0.1
+ * Last change:	18/11/13 
+ * Author:	twissell
+ * Primary use:	Zilean framework
+ *------------------------------------------------------------------- */
+/* creates all the font presets for all the
+ * font prefixes as placeholder classes.
+ *
+ * @param $ratio    -> ratio as a decimal number.
+ * @param $unit     -> base value to build the scale from.
+ * @param $sub-unit -> alternative value to build a double stranded scale.
+ */
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.yocto {
+  font-size: 0.90327px;
+  line-height: 1.66063;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.zepto {
+  font-size: 1.20406px;
+  line-height: 1.24578;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.atto {
+  font-size: 1.60501px;
+  line-height: 0.93457;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.femto {
+  font-size: 2.13948px;
+  line-height: 0.7011;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.pico {
+  font-size: 2.85193px;
+  line-height: 0.52596;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.nano {
+  font-size: 3.80162px;
+  line-height: 0.39457;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.micro {
+  font-size: 5.06757px;
+  line-height: 0.296;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.mili {
+  font-size: 6.75507px;
+  line-height: 0.22206;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.centi {
+  font-size: 9.0045px;
+  line-height: 0.16658;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.deci {
+  font-size: 12.003px;
+  line-height: 0.12497;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.unit {
+  font-size: 16px;
+  line-height: 0.09375;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.deca {
+  font-size: 21.328px;
+  line-height: 0.07033;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.hecto {
+  font-size: 28.43022px;
+  line-height: 0.05276;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.kilo {
+  font-size: 37.89749px;
+  line-height: 0.03958;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.mega {
+  font-size: 50.51735px;
+  line-height: 0.02969;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.giga {
+  font-size: 67.33963px;
+  line-height: 0.02228;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.tera {
+  font-size: 89.76373px;
+  line-height: 0.01671;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.peta {
+  font-size: 119.65505px;
+  line-height: 0.01254;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.exa {
+  font-size: 159.50018px;
+  line-height: 0.0094;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.zetta {
+  font-size: 212.61374px;
+  line-height: 0.00706;
+}
+
+/* line 37, ../../sass_lib/typography/_typography.sass */
+.yotta {
+  font-size: 283.41412px;
+  line-height: 0.00529;
+}
+
+/* line 36, ../../blocks/main.sass */
 html {
   background: #ece2d9;
 }
 
-/* line 35, ../../blocks/main.sass */
+/* line 39, ../../blocks/main.sass */
 body {
   background-image: url("../images/header__background.gif");
   background-repeat: repeat-x;
 }
 
-/* line 40, ../../blocks/main.sass */
+/* line 44, ../../blocks/main.sass */
 a {
   text-decoration: none;
 }

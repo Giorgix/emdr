@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------
+ * [Unit related functions Stylesheet]
+ *
+ * Project:	Zilean
+ * Version:	0.1
+ * Last change:	18/11/13 
+ * Author:	twissell
+ * Primary use:	Zilean framework
+ *-------------------------------------------------------------------*/
+
+// thx to eric meyer
+@function strip-units($number)
+  @return $number / ($number * 0 + 1)
