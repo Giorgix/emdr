@@ -37,7 +37,7 @@
   display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
   +primary--regular
   text-transform: uppercase
-  text-align: left
+  //text-align: left
   
 .nav__link
   &:link
@@ -62,12 +62,13 @@
     border: 5px solid $very-loud
     right: 1px
     top: 38px
-    width: 30%
+    width: 50%
+    z-index: 1
     +border-radius(4px 0 4px 4px)
     +opacity(0.9)
   
   .nav__item 
-    text-align: left
+    text-align: center
     width: 100%
     padding: 10px 0
     text-transform: capitalize

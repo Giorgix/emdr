@@ -74,6 +74,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
 /*----- mixin font-face ------ */
 /*------------ typography  loader ----------- */
 @font-face {
@@ -267,7 +278,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
-  text-align: left;
 }
 
 /* line 43, ../../blocks/nav/_nav.sass */
@@ -302,7 +312,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 5px solid #1f2324;
     right: 1px;
     top: 38px;
-    width: 30%;
+    width: 50%;
+    z-index: 1;
     -webkit-border-radius: 4px 0 4px 4px;
     -moz-border-radius: 4px 0 4px 4px;
     -ms-border-radius: 4px 0 4px 4px;
@@ -312,15 +323,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     opacity: 0.9;
   }
 
-  /* line 69, ../../blocks/nav/_nav.sass */
+  /* line 70, ../../blocks/nav/_nav.sass */
   .nav__item {
-    text-align: left;
+    text-align: center;
     width: 100%;
     padding: 10px 0;
     text-transform: capitalize;
   }
 
-  /* line 75, ../../blocks/nav/_nav.sass */
+  /* line 76, ../../blocks/nav/_nav.sass */
   .nav:hover .nav__list {
     display: block;
   }
@@ -347,11 +358,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
+/* line 15, ../../blocks/welcome/_welcome.sass */
+.welcome-message {
+  background: url("../images/welcome__image.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 24px;
+}
+
 @media only screen and (max-width: 599px) {
-  /* line 19, ../../blocks/welcome/_welcome.sass */
+  /* line 21, ../../blocks/welcome/_welcome.sass */
   .welcome-message__title {
     padding: 12px;
     margin-bottom: 12px;
+    margin-bottom: 24px;
     font-size: 24.876px;
     line-height: 0.965;
     font-family: Trajan, Georgia, serif;
@@ -366,11 +385,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
-  /* line 28, ../../blocks/welcome/_welcome.sass */
+  /* line 31, ../../blocks/welcome/_welcome.sass */
   .welcome-message__text {
     padding: 12px;
     margin-bottom: 12px;
-    background: #1f2324 url("../images/icons/olives.png") no-repeat right bottom;
+    background: #1f2324;
     background-size: 75px 75px;
     font-size: 18.662px;
     line-height: 1.286;
@@ -379,27 +398,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-style: normal;
     color: #fcfff5;
     margin-bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    opacity: 0.85;
   }
   /* line 18, ../../sass_lib/_island.sass */
   .welcome-message__text > :last-child {
     margin-bottom: 0;
   }
 }
-/* line 37, ../../blocks/welcome/_welcome.sass */
+/* line 41, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text strong {
   font-family: Aleo-Bold, Verdana, Geneva, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 40, ../../blocks/welcome/_welcome.sass */
+/* line 44, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text em {
   font-family: Aleo-Italic, Verdana, Geneva, sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 43, ../../blocks/welcome/_welcome.sass */
+/* line 47, ../../blocks/welcome/_welcome.sass */
 .welcome-message__image {
   max-width: 100%;
 }
@@ -728,17 +749,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
 /*------------------------------------------------------------------
  * [Title Stylesheet]
  *

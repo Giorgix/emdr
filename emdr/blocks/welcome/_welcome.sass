@@ -13,11 +13,14 @@
 @import '../../sass_lib/island'
 
 .welcome-message
-  //+island
+  background: url('../images/welcome__image.jpg') no-repeat
+  background-size: cover
+  +gravity--size-normal
 
 +at-breakpoint('palm')
   .welcome-message__title
     +island
+    +gravity--size-normal
     //background: $moderately-loud
     +kilo
     +secondary--regular
@@ -27,12 +30,13 @@
 
   .welcome-message__text
     +island
-    background: $very-loud url('../images/icons/olives.png') no-repeat right bottom
+    background: $very-loud /*url('../images/icons/olives.png') no-repeat right bottom*/
     background-size: 75px 75px
     +deca
     +primary--regular
     color: $very-soft
     margin-bottom: 0
+    +opacity(0.85)
 
 .welcome-message__text strong
   +primary--bold
