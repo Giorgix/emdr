@@ -97,7 +97,10 @@
   display: inline-block
 
 .nav__item
-  font-size: 16px
+  @extend %centi
+  +secondary--bold
+  line-height: 14px
+  text-transform: uppercase
   display: inline-block
   padding: 12px
   //+island

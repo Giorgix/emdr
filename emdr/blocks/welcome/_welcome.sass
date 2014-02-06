@@ -13,9 +13,14 @@
 @import '../../sass_lib/island'
 
 .welcome-message
-  background: url('../images/welcome__image.jpg') no-repeat
-  background-size: cover
-  +gravity--size-normal
+
+.welcome-message__title
+  +primary--regular
+  @extend %kilo
+
+.welcome-message__text
+  +primary--italic
+  @extend %unit
 
 +at-breakpoint('palm')
   .welcome-message__title
@@ -40,9 +45,10 @@
 
 .welcome-message__text strong
   +primary--bold
+  font-style: italic
 
 .welcome-message__text em
   +primary--italic
 
-.welcome-message__image
+//.welcome-message__image
   max-width: 100%
