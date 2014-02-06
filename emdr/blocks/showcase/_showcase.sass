@@ -36,7 +36,7 @@
   @extend %centi
   text-align: center
   line-height: 70px 
-
+  color: white
 //state
 .showcase__panel--state-on
   display: block
@@ -51,11 +51,38 @@
   background-position: 0 0
 
 
-
-//move this to his own block
+//welcome-message
 .welcome-message
-  background: url('../images/welcome-message__image.jpg')
+  background: url('../images/showcase__image-1.jpg')
+
+.welcome-message__title
+  width: 50%
+  background-color: $very-loud
+  +primary--regular
+  @extend %kilo
+  color: $moderately-soft
+  padding: 24px 0 24px 48px
+  +opacity(0.85)
+
+.welcome-message p
+  width: 50%
+  background-color: $very-loud
+  +primary--italic
+  @extend %unit
+  color: $very-soft
+  padding: 0 0 24px 48px
+  +opacity(0.85)
+
+.welcome-message p strong
+  +primary--bold
+  font-style: italic
+
+.welcome-message p em
+  +primary--italic  
 
 
+//wine-oil-tourism
+.wine-oil-tourism
+  background: url('../images/showcase__image-2.jpg')
 
 

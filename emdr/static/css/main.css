@@ -305,7 +305,7 @@ a {
 }
 
 /* line 36, ../../sass_lib/typography/_typography.sass */
-.welcome-message__text {
+.welcome-message p {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -324,7 +324,7 @@ a {
 
 /* line 1, ../../blocks/page/_page.sass */
 html {
-  background: #ece2d9;
+  background: #e9f2f9;
 }
 
 /* line 4, ../../blocks/page/_page.sass */
@@ -454,7 +454,7 @@ body {
 
 /* line 50, ../../blocks/nav/_nav.sass */
 .nav {
-  background: #1f2324;
+  background: #224e6d;
 }
 
 /* line 54, ../../blocks/nav/_nav.sass */
@@ -485,58 +485,6 @@ body {
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 15, ../../blocks/welcome/_welcome.sass */
-.welcome-message__title {
-  width: 50%;
-  background-color: black;
-  font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #7e8aa2;
-  padding: 24px 0 24px 48px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
-  opacity: 0.85;
-}
-
-/* line 24, ../../blocks/welcome/_welcome.sass */
-.welcome-message__text {
-  width: 50%;
-  background-color: black;
-  font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
-  font-weight: 400;
-  font-style: italic;
-  color: white;
-  padding: 0 0 24px 48px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
-  opacity: 0.85;
-}
-
-/* line 33, ../../blocks/welcome/_welcome.sass */
-.welcome-message__text strong {
-  font-family: Baskerville-Bold, Georgia, "Times new roman", Times, serif;
-  font-weight: 700;
-  font-style: normal;
-  font-style: italic;
-}
-
-/* line 37, ../../blocks/welcome/_welcome.sass */
-.welcome-message__text em {
-  font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
 /* line 3, ../../blocks/products/_products.sass */
 .products {
   padding: 45px 15px;
@@ -670,7 +618,7 @@ body {
 /* line 26, ../../blocks/tourism/_tourism.sass */
 .tourism {
   padding: 30px;
-  background: red;
+  background: #3c8dc5;
   height: 300px;
 }
 
@@ -720,6 +668,7 @@ body {
   font-style: normal;
   text-align: center;
   line-height: 70px;
+  color: white;
 }
 
 /* line 41, ../../blocks/showcase/_showcase.sass */
@@ -742,7 +691,53 @@ body {
   background-position: 0 0;
 }
 
-/* line 56, ../../blocks/showcase/_showcase.sass */
+/* line 55, ../../blocks/showcase/_showcase.sass */
 .welcome-message {
-  background: url("../images/welcome-message__image.jpg");
+  background: url("../images/showcase__image-1.jpg");
+}
+
+/* line 58, ../../blocks/showcase/_showcase.sass */
+.welcome-message__title {
+  width: 50%;
+  background-color: black;
+  font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #7e8aa2;
+  padding: 24px 0 24px 48px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
+}
+
+/* line 67, ../../blocks/showcase/_showcase.sass */
+.welcome-message p {
+  width: 50%;
+  background-color: black;
+  font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  padding: 0 0 24px 48px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
+}
+
+/* line 76, ../../blocks/showcase/_showcase.sass */
+.welcome-message p strong {
+  font-family: Baskerville-Bold, Georgia, "Times new roman", Times, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-style: italic;
+}
+
+/* line 80, ../../blocks/showcase/_showcase.sass */
+.welcome-message p em {
+  font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 85, ../../blocks/showcase/_showcase.sass */
+.wine-oil-tourism {
+  background: url("../images/showcase__image-2.jpg");
 }
