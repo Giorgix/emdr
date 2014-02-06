@@ -560,7 +560,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 17, ../../blocks/welcome/_welcome.sass */
+/* line 15, ../../blocks/welcome/_welcome.sass */
 .welcome-message__title {
   width: 50%;
   background-color: black;
@@ -573,7 +573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   opacity: 0.85;
 }
 
-/* line 26, ../../blocks/welcome/_welcome.sass */
+/* line 24, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text {
   width: 50%;
   background-color: black;
@@ -587,7 +587,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @media only screen and (max-width: 599px) {
-  /* line 36, ../../blocks/welcome/_welcome.sass */
+  /* line 34, ../../blocks/welcome/_welcome.sass */
   .welcome-message__title {
     padding: 12px;
     margin-bottom: 12px;
@@ -606,7 +606,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
-  /* line 46, ../../blocks/welcome/_welcome.sass */
+  /* line 44, ../../blocks/welcome/_welcome.sass */
   .welcome-message__text {
     padding: 12px;
     margin-bottom: 12px;
@@ -627,7 +627,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 }
-/* line 56, ../../blocks/welcome/_welcome.sass */
+/* line 54, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text strong {
   font-family: Baskerville-Bold, Georgia, "Times new roman", Times, serif;
   font-weight: 700;
@@ -635,7 +635,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic;
 }
 
-/* line 60, ../../blocks/welcome/_welcome.sass */
+/* line 58, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text em {
   font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
   font-weight: 400;
