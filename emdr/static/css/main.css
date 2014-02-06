@@ -498,7 +498,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 89, ../../blocks/nav/_nav.sass */
 .nav__list {
-  background: #291704;
+  background: #1f2324;
   text-align: justify;
   font-size: 0;
 }
@@ -519,6 +519,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-transform: uppercase;
   display: inline-block;
   padding: 12px;
+}
+
+/* line 109, ../../blocks/nav/_nav.sass */
+.nav__link:link {
+  color: white;
+}
+/* line 111, ../../blocks/nav/_nav.sass */
+.nav__link:visited {
+  color: white;
+}
+/* line 113, ../../blocks/nav/_nav.sass */
+.nav__link:hover {
+  color: black;
+}
+/* line 115, ../../blocks/nav/_nav.sass */
+.nav__link:active {
+  color: #263248;
 }
 
 /*------------------------------------------------------------------
