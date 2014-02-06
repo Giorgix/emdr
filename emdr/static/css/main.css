@@ -391,7 +391,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
   font-weight: 400;
   font-style: normal;
-  color: #fcfff5;
+  color: white;
   text-shadow: 0px 0px 1px black;
 }
 
@@ -515,7 +515,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 14px;
+  line-height: 12px;
   text-transform: uppercase;
   display: inline-block;
   padding: 12px;
@@ -545,20 +545,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *------------------------------------------------------------------- */
 /* line 17, ../../blocks/welcome/_welcome.sass */
 .welcome-message__title {
+  width: 50%;
+  background-color: black;
   font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
   font-weight: 400;
   font-style: normal;
+  color: #7e8aa2;
+  padding: 24px 0 24px 48px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
 }
 
-/* line 21, ../../blocks/welcome/_welcome.sass */
+/* line 26, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text {
+  width: 50%;
+  background-color: black;
   font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
   font-weight: 400;
   font-style: italic;
+  color: white;
+  padding: 0 0 24px 48px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
 }
 
 @media only screen and (max-width: 599px) {
-  /* line 26, ../../blocks/welcome/_welcome.sass */
+  /* line 36, ../../blocks/welcome/_welcome.sass */
   .welcome-message__title {
     padding: 12px;
     margin-bottom: 12px;
@@ -568,7 +580,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #fcfff5;
+    color: white;
     text-align: center;
     text-shadow: 0px 0px 1px black;
   }
@@ -577,18 +589,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 
-  /* line 36, ../../blocks/welcome/_welcome.sass */
+  /* line 46, ../../blocks/welcome/_welcome.sass */
   .welcome-message__text {
     padding: 12px;
     margin-bottom: 12px;
-    background: #1f2324;
+    background: black;
     background-size: 75px 75px;
     font-size: 18.662px;
     line-height: 1.286;
     font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
     font-weight: 400;
     font-style: normal;
-    color: #fcfff5;
+    color: white;
     margin-bottom: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
     opacity: 0.85;
@@ -598,7 +610,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
   }
 }
-/* line 46, ../../blocks/welcome/_welcome.sass */
+/* line 56, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text strong {
   font-family: Baskerville-Bold, Georgia, "Times new roman", Times, serif;
   font-weight: 700;
@@ -606,7 +618,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic;
 }
 
-/* line 50, ../../blocks/welcome/_welcome.sass */
+/* line 60, ../../blocks/welcome/_welcome.sass */
 .welcome-message__text em {
   font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
   font-weight: 400;
@@ -656,7 +668,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
     font-weight: 400;
     font-style: normal;
-    color: #d1dbbd;
+    color: #7e8aa2;
     text-shadow: 0px 0px 1px black;
     text-align: center;
     text-transform: capitalize;
@@ -668,7 +680,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 16, ../../blocks/products/_products.sass */
   .products__item {
-    background-color: #3e606f;
+    background-color: #263248;
     margin-bottom: 48px;
   }
   /* line 16, ../../sass_lib/_gravity.sass */
@@ -698,7 +710,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #fcfff5;
+    color: white;
     text-shadow: 0px 0px 1px black;
     text-align: center;
     margin: -48px 0 0 0;
@@ -713,7 +725,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
     font-weight: 300;
     font-style: normal;
-    color: #fcfff5;
+    color: white;
     text-align: center;
   }
   /* line 18, ../../sass_lib/_island.sass */
