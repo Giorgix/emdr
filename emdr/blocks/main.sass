@@ -10,7 +10,10 @@
  *
  *-------------------------------------------------------------------*/
 
+// global reset and normalize
 @import 'compass/reset'
+@import '../sass_lib/normalize'
+
 @import '../sass_lib/gravity'
 @import '../sass_lib/clearfix'
 @import '../sass_lib/island'
@@ -21,26 +24,10 @@
 @import 'compass/css3/border-radius'
 @import 'compass/css3/opacity'
 @import 'compass/css3/images'
+
+// blocks
+@import 'page/page'
 @import 'home/home'
 
 
 
-//+create-font-presets(get-ratio($base-font-size-ratio), $base-font-size, $base-font-size--alt) //deleted from here because being the last mixin after all the imports cause to be the last properties in the final css so u can not override properties in each class for some blocks/elements if its required
-
-//html
-  //background: url("../images/icons/grapes.png") no-repeat left fixed
-  //-webkit-background-size: cover
-  //-moz-background-size: cover
-  //-o-background-size: cover
-  //background-size: cover
-
-html
-  background: #ECE2D9
-
-body
-  background-image: url('../images/header__background.gif')
-  background-repeat: repeat-x
-
-//this should be in the reset sheet
-a
-  text-decoration: none

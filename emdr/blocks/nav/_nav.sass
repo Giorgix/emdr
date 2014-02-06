@@ -1,93 +1,32 @@
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	03/02/14 
- * Author:	twissell & giorgix
- * Primary use:	app-name
- * Acknowledgments:
- *
- *-------------------------------------------------------------------*/
-
-@import '../../sass_lib/island'
-
-/*.nav
- * display: inline-block
- * //+island
- * width: 8%
+/*
+ * extract from here the justify pattern,
+ * it is as follows:
  * 
- *text-align: right
- *
- *.nav__icon
- * display: hidden
- * width: 30px
- * height: 30px
- * background: url(../images/menu-icon.png) no-repeat center
- * background-size: 24px 24px
- * //+border-radius(4px 4px 4px 4px)
- * vertical-align: middle //TODO align the icon with the title
- * margin: -10px 0 0 10px 
- *
- *.nav__icon
- * &:hover
- *   background-color: $very-loud
- *   +border-radius(4px 4px 0 0)
- *
- *.nav__item
- * display: inline-block //TODO there is a issue with the length of the menu in smaller sizes until the palm breakpoint
- * +primary--regular
- * text-transform: uppercase
- * //text-align: left
+ * .collection -> nav__list
+ *   text-align: justify  
+ *   font-size: 0
  * 
- *.nav__link
- * &:link
- *   color: $moderately-soft
- * &:visited
- *   color: $very-loud
- * &:hover
- *   color: $loud
- * &:active
- *   color: $moderately-loud
- *   
- */
-/*+at-breakpoint('palm')
- * .nav__icon 
+ * .collection:after -> nav__list
+ *   content: " "
+ *   width: 100% 
  *   display: inline-block
- * 
- * .nav__list, .nav:active .nav__list 
- *   display: none
- *   position: absolute
- *   padding: 20px
- *   background: $very-soft
- *   border: 5px solid $very-loud
- *   right: 1px
- *   top: 38px
- *   width: 50%
- *   z-index: 1
- *   +border-radius(4px 0 4px 4px)
- *   +opacity(0.9)
- * 
- * .nav__item 
- *   text-align: center
- *   width: 100%
- *   padding: 10px 0
- *   text-transform: capitalize
- * 
- * .nav:hover .nav__list 
- *   display: block
+ *   
+ * .item -> nav__item
+ *   display: inline-block
+ *   font-size: normalize font size
+ *
+ *  see block products to another use
+ *  of this pattern.
  */
 
 
-
-//////
-
+// layout and spacing
 .nav
-  position: relative
+  width: 100%
+  position: absolute
   bottom: 0
 
 .nav__list
-  background: $loud
   text-align: justify
   font-size: 0
 
@@ -97,13 +36,19 @@
   display: inline-block
 
 .nav__item
-  @extend %centi
-  +secondary--bold
   line-height: 12px
-  text-transform: uppercase
   display: inline-block
   padding: 12px
-  //+island
+
+//typography
+.nav__item
+  @extend %centi
+  +secondary--bold
+  text-transform: uppercase
+
+//color
+.nav
+  background: $loud
 
 .nav__link
   &:link
@@ -114,14 +59,4 @@
     color: $very-loud
   &:active
     color: $moderately-loud
-
-
-
-
-
-
-
-
-
-
 

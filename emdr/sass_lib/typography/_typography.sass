@@ -11,7 +11,7 @@
  *-------------------------------------------------------------------*/
 
 @import 'ratios'
-@import 'scale'
+@import 'modular_scale'
 @import 'vertical_rhythm'
 
 $base-font-size: 16px
@@ -30,7 +30,7 @@ $base-line-height: 24px // set it in px
  */
 =create-font-presets($ratio, $unit, $sub-unit: null)
   
-  $scale: scale($ratio, $unit, $sub-unit)
+  $scale: modular_scale($ratio, $unit, $sub-unit)
    
   @for $i from 1 through length($scale)
     %#{nth($font-prefixes, $i)}

@@ -1,69 +1,16 @@
-@import '../../sass_lib/flag'
-@import '../../sass_lib/island'
-@import '../../sass_lib/gravity'
-
-+at-breakpoint('palm')
-  .products__title
-    padding: 12px //TODO make a mixin for other type of island
-    +gravity--size-big
-    +kilo
-    +primary--regular
-    color: $moderately-soft
-    +text-shadow
-    text-align: center
-    text-transform: capitalize
-
-  .products__item
-    background-color: $moderately-loud
-    +gravity--size-big
-  
-  .product__image
-    margin: 0 auto
-    max-height: 96px
-    max-width: 96px
-    position: relative
-    top: -48px
-
-  .product__image img
-    height: 96px
-    width: 96px
-
-  .product__name
-    +hecto
-    +secondary--regular
-    color: $very-soft
-    +text-shadow
-    text-align: center
-    margin: -48px 0 0 0
-
-  .product__details
-    +island
-    +unit
-    +primary--light
-    color: $very-soft
-    text-align: center
-
-  .product__details strong
-    +primary--bold
-    
-  .product__details em
-    +primary--italic
-
-///////
-
+// layout and spacing
+//products
 .products
-  padding: 30px
+  padding: 45px 15px
 
 .products-message
   width: 260px
   display: inline-block
-  //background: red
   vertical-align: top
 
 .products__list
-  width: 630px
+  width: 660px
   display: inline-block
-  //background: yellow
   text-align: justify
   font-size: 0 
 
@@ -74,8 +21,68 @@
   
 
 .products__item
-  width: 138px
   display: inline-block
   vertical-align: top
   font-size: 16px
   text-align: left
+  background: #141519
+  color: white
+  box-shadow: 0 8px 6px -6px grey
+
+  border: 1px solid #141519
+
+//product
+//hover effect base layout rules
+
+.product 
+  width: 213px
+  height: 200px
+  overflow: hidden
+  position: relative
+  text-align: center
+  display: block
+
+
+.product__image
+  width: 213px
+  height: 200px
+
+.product__info 
+  width: 213px
+  height: 200px
+  position: absolute
+  top: 0
+  left: 0
+
+
+// skin of hover effect
+
+.product--skin-thumbnail-1 .product__info 
+  opacity: 0
+  background-color: rgba(37,49,70, 0.7) 
+  transition: all 0.4s ease-in-out
+
+.product--skin-thumbnail-1 .product__name 
+  transform: translateY(-100px)
+  opacity: 0
+  transition: all 0.2s ease-in-out
+
+.product--skin-thumbnail-1 .product__description 
+  transform: translateY(100px)
+  opacity: 0
+  transition: all 0.2s linear
+
+.product--skin-thumbnail-1:hover .product__image  
+  transform: scale(1.1)
+
+.product--skin-thumbnail-1:hover .product__info  
+  opacity: 1
+
+.product--skin-thumbnail-1:hover .product__name,
+.product--skin-thumbnail-1:hover .product__description 
+  opacity: 1
+  transform: translateY(0px)
+
+.product--skin-thumbnail-1:hover .product__description 
+  transition-delay: 0.1s
+

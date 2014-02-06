@@ -1,53 +1,61 @@
+// layout and spacing
 .showcase
-  width: 960px
-  height: 350px
-  margin: 0  auto
-  background: red
-  position: relative // triggers a new positioning context
+  height: 370px
+  border: 10px solid white
+  /*
+   * triggers a new positioning 
+   * context.
+   */
+  position: relative 
+  box-shadow: 0 8px 6px -6px grey, 0 -8px 6px -6px grey
 
-.showcase-content
-  width: 950px
-  height: 350px
-  
-//
+.showcase__content
+  //width: 800px
+  height: 100%
 
 .showcase__panel
   height: 100%
   display: none
 
-.showcase__panel--state-activate
-  display: block
-
-.showcase__panle--state-deactivate
-  display: none
-
-.welcome-message
-  background: url('../images/welcome-message__image.jpg')
-
-//
-
-.showcase-menu
+.showcase__list
   width: 210px
-  height: 350px
+  height: 100%
   position: absolute
   right: 0
   top: 0
 
-.showcase-menu__link
+.showcase__link
   height: 70px
   display: block
   padding-left: 20px
+  background: url('../images/showcase-menu__link.png') rgba(0, 0, 0, 0)
+
+//typography
+.showcase__link
   +primary--regular
   @extend %centi
   text-align: center
   line-height: 70px 
-  background: url('../images/showcase-menu__link.png') rgba(0, 0, 0, 0)
 
-//.showcase-menu__link--state-deactivate
-//  background-position: 0 70px 
+//state
+.showcase__panel--state-on
+  display: block
 
-//.showcase-menu__link--state-activate
-//  background-position: 0 - 70px
+.showcase__panel--state-off
+  display: none
 
-.showcase-menu__link:hover
+.showcase__link--state-on
   background-position: 0 -70px
+
+.showcase__link--state-off
+  background-position: 0 0
+
+
+
+//move this to his own block
+.welcome-message
+  background: url('../images/welcome-message__image.jpg')
+
+
+
+

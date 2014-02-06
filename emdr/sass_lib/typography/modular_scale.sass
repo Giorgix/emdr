@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------
+ * [Musical scales]
+ *
+ * Project:	Zilean
+ * Version:	0.1
+ * Last change:	19/11/13 
+ * Author:	twissell
+ * Primary use:	Zilean framework
+ * Acknowledgments: Tim Brown (tbrown.org)
+ *
+ * TODO:
+ *    enable the use of two ratios for double-stranded scales
+ *    enable the use of hex numbers as units.
+ *-------------------------------------------------------------------*/
+
+@import '../list'
+
+$font-prefixes: yocto zepto atto femto pico nano micro mili centi deci unit deca hecto kilo mega giga tera peta exa zetta yotta
+
+/*
+ * build a single or double stranded scale fro a base value or 
+ * values and a ratio.
+ *
+ * @param $ratio         -> ratio as a decimal number.
+ * @param $unit          -> base value to build the scale from.
+ * @param $sub-unit      -> alternative value to build a double stranded scale.
+ * @param $num-multiples -> number of degrees (multiples) of the scale.
+ * @return               -> the scale sorted with the unit in the middle.
+ * @warn                 -> ArgumentError
+ */
+@function modular_scale($ratio, $unit, $sub-unit: null,  $number-of-factors: 10)
+  $scale: ()
+  @if $sub-unit == null
+    $scale: single-stranded-scale($ratio, $unit, $number-of-factors)
+  @else if $sub-unit != null 
+    $scale: double-stranded-scale($ratio, $unit, $sub-unit, $number-of-factors)
+  @else
+    @warn 'ArgumentError: scales can not have more than 2 important values.'
+  @return $scale
+
+/*
+ * build a single stranded scale from a base value (unit)
+ * and a ratio.
+ *
+ * @param $ratio         -> ratio as decimal number.
+ * @param $unit          -> base value to build the scale from.
+ * @param $num-multiples -> number of degrees (multiples) of the scale.
+ * @return               -> the scale sorted with the unit in the middle.
+ */
+@function single-stranded-scale($ratio, $unit, $num-multiples)
+  $scale: join(get-multiples($ratio, $unit, sub-multiple, $num-multiples), get-multiples($ratio, $unit, multiple, $num-multiples))
+  $scale: append($scale, $unit)
+  $scale: sort($scale)
+    
+  @return $scale
+
+/*
+ * build a double stranded scale from two base values (units)
+ * and a ratio.
+ *
+ * @param $ratio         -> ratio as decimal number
+ * @param $unit          -> base value to build the scale from,
+ * @param $sub-unit      -> alternative value to build a double stranded scale.
+ * @param $num-multiples -> number of degrees (multiples) of the scale.
+ * @return               -> the scale sorted with the unit in the middle.
+ */
+@function double-stranded-scale($ratio, $unit, $sub-unit, $num-multiples)
+  $scale: ()
+  $scale: join($scale, single-stranded-scale($ratio, $unit, $num-multiples))
+  $scale: join($scale, single-stranded-scale($ratio, $sub-unit, $num-multiples))
+  $scale: sort($scale)
+
+  $l-offset: index($scale, nth($unit, 1)) - 10
+  $r-offset: index($scale, nth($unit, 1)) + 11
+  $scale: slice($scale, $l-offset, $r-offset)
+  
+  @return $scale
+
+/*
+ * returns a list of multiples or submultiples for a 
+ * given number.
+ * 
+ * @param $ratio         -> ratio as a decimal number
+ * @param $unit          -> base value for multiple calculations
+ * @param $factor        -> multiple/sub-multiple
+ * @param $num-multiples -> number of multiples to work out
+ * @return               -> a list with all the multiples, not
+ *                          include the unit.
+ */
+@function get-multiples($ratio, $unit, $factor, $num-multiples)
+  $values: ()
+  $value: $unit
+  @for $i from 1 through $num-multiples
+    @if $factor == multiple
+      $value: $value * $ratio
+    @else if $factor == sub-multiple
+      $value: $value / $ratio
+    $values: append($values, $value)
+  @return $values
