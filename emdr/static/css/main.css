@@ -324,7 +324,7 @@ a {
 
 /* line 1, ../../blocks/page/_page.sass */
 html {
-  background: #e9f2f9;
+  background: #d1d9e0;
 }
 
 /* line 4, ../../blocks/page/_page.sass */
@@ -395,7 +395,7 @@ body {
 /* line 1, ../../blocks/content/_content.sass */
 .content {
   padding-top: 15px;
-  background: white;
+  background: #e9f2f9;
 }
 
 /* extract from here the justify pattern,
