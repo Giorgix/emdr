@@ -90,37 +90,6 @@ a {
   text-decoration: none;
 }
 
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
 /*----- mixin font-face ------ */
 /*------------ typography  loader ----------- */
 @font-face {
@@ -145,181 +114,6 @@ a {
   src: url("../web-fonts/Libre-Baskerville-Bold.eot?#iefix") format("embedded-opentype"), url("../web-fonts/Libre-Baskerville-Bold.woff") format("woff"), url("../web-fonts/Libre-Baskerville-Bold.ttf") format("truetype"), url("../web-fonts/Libre-Baskerville-Bold.svg#Baskerville-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
-}
-
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Musical scales]
- *
- * Project:	Zilean
- * Version:	0.1
- * Last change:	19/11/13 
- * Author:	twissell
- * Primary use:	Zilean framework
- * Acknowledgments: Tim Brown (tbrown.org)
- *
- * TODO:
- *    enable the use of two ratios for double-stranded scales
- *    enable the use of hex numbers as units.
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [list methods]
- *
- * Project:	Zilean
- * Version:	0.1
- * Last change:	18/11/13
- * Author: twissell
- * Primary use:	Zilean framework
- *
- * TODO:
- *    slice:
- *      implement a step param
- *      allow negative values for start and end params (ala python)
- *    sort:
- *      implement a key param
- *      implement a asc desc param
- *------------------------------------------------------------------- */
-/* Insert an item at a given position.
- *
- * @param $l -> the list that we want to insert 
- *              the item.
- * @param $index -> the index of the item before which
- *                   to insert.
- * @param $value -> the value to be inserted.
- * @return -> a new list with the value.
- */
-/* delete an item at a given position.
- *
- * @param $l -> the list from that we want to
- *              delete the item.
- * @param $index -> the index of the item to be
- *                  deleted
- * @return -> a new list without the item deleted.
- * @warn ->   IndexError
- */
-/* removes the first item from the list
- * that macths value.
- * 
- * @param $l -> the list from that we want to
- *              remove an item.
- * @param $value -> the value to be removed.
- * @return -> a new list without the item
- *            removed.
- * @warn ValueError
- */
-/* returns a portion of a list.
- *
- * @param $l -> the list to be sliced
- * @param $start -> the index where begin the slice
- * @param $end -> the index where the slice finish
- * @return -> a portion of the list
- */
-/* swaps two items in a list by index
- *
- * @param $l -> the list where the items are.
- * @param $a-index -> the index of the first element
- * @param $b-index -> the index of the second element
- * @return a new list with the elements swaped.
- */
-/* sorts a list, uses insertion sort.
- *
- * @param -> the list to be sorted.
- * @return -> a new list in order
- */
-/* build a single or double stranded scale fro a base value or 
- * values and a ratio.
- *
- * @param $ratio         -> ratio as a decimal number.
- * @param $unit          -> base value to build the scale from.
- * @param $sub-unit      -> alternative value to build a double stranded scale.
- * @param $num-multiples -> number of degrees (multiples) of the scale.
- * @return               -> the scale sorted with the unit in the middle.
- * @warn                 -> ArgumentError
- */
-/* build a single stranded scale from a base value (unit)
- * and a ratio.
- *
- * @param $ratio         -> ratio as decimal number.
- * @param $unit          -> base value to build the scale from.
- * @param $num-multiples -> number of degrees (multiples) of the scale.
- * @return               -> the scale sorted with the unit in the middle.
- */
-/* build a double stranded scale from two base values (units)
- * and a ratio.
- *
- * @param $ratio         -> ratio as decimal number
- * @param $unit          -> base value to build the scale from,
- * @param $sub-unit      -> alternative value to build a double stranded scale.
- * @param $num-multiples -> number of degrees (multiples) of the scale.
- * @return               -> the scale sorted with the unit in the middle.
- */
-/* returns a list of multiples or submultiples for a 
- * given number.
- * 
- * @param $ratio         -> ratio as a decimal number
- * @param $unit          -> base value for multiple calculations
- * @param $factor        -> multiple/sub-multiple
- * @param $num-multiples -> number of multiples to work out
- * @return               -> a list with all the multiples, not
- *                          include the unit.
- */
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name 
- *------------------------------------------------------------------- */
-/*------------------------------------------------------------------
- * [Unit related functions Stylesheet]
- *
- * Project:	Zilean
- * Version:	0.1
- * Last change:	18/11/13 
- * Author:	twissell
- * Primary use:	Zilean framework
- *------------------------------------------------------------------- */
-/* creates all the font presets for all the
- * font prefixes as placeholder classes.
- *
- * @param $ratio    -> ratio as a decimal number.
- * @param $unit     -> base value to build the scale from.
- * @param $sub-unit -> alternative value to build a double stranded scale.
- */
-/* line 36, ../../sass_lib/typography/_typography.sass */
-.nav__item, .showcase__link {
-  font-size: 12.003px;
-  line-height: 1.9995;
-}
-
-/* line 36, ../../sass_lib/typography/_typography.sass */
-.welcome-message p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* line 36, ../../sass_lib/typography/_typography.sass */
-.title__link {
-  font-size: 18.662px;
-  line-height: 1.28604;
-}
-
-/* line 36, ../../sass_lib/typography/_typography.sass */
-.welcome-message__title {
-  font-size: 24.87645px;
-  line-height: 0.96477;
 }
 
 /* line 1, ../../blocks/page/_page.sass */
@@ -374,22 +168,6 @@ body {
 .logo__image {
   height: 150px;
   width: 150px;
-}
-
-/* line 2, ../../blocks/title/_title.sass */
-.title {
-  display: inline-block;
-  position: relative;
-  top: -30px;
-}
-
-/* line 10, ../../blocks/title/_title.sass */
-.title__link {
-  font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  text-shadow: 0px 0px 1px black;
 }
 
 /* line 1, ../../blocks/content/_content.sass */
@@ -447,44 +225,33 @@ body {
 /* line 44, ../../blocks/nav/_nav.sass */
 .nav__item {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   font-weight: 700;
-  font-style: normal;
   text-transform: uppercase;
 }
 
-/* line 50, ../../blocks/nav/_nav.sass */
+/* line 51, ../../blocks/nav/_nav.sass */
 .nav {
   background: #224e6d;
 }
 
-/* line 54, ../../blocks/nav/_nav.sass */
+/* line 55, ../../blocks/nav/_nav.sass */
 .nav__link:link {
   color: white;
 }
-/* line 56, ../../blocks/nav/_nav.sass */
+/* line 57, ../../blocks/nav/_nav.sass */
 .nav__link:visited {
   color: white;
 }
-/* line 58, ../../blocks/nav/_nav.sass */
+/* line 59, ../../blocks/nav/_nav.sass */
 .nav__link:hover {
   color: black;
 }
-/* line 60, ../../blocks/nav/_nav.sass */
+/* line 61, ../../blocks/nav/_nav.sass */
 .nav__link:active {
   color: #263248;
 }
 
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
 /* line 3, ../../blocks/products/_products.sass */
 .products {
   padding: 45px 15px;
@@ -492,104 +259,183 @@ body {
 
 /* line 6, ../../blocks/products/_products.sass */
 .products-message {
-  width: 260px;
+  width: 290px;
+  padding: 0 15px;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 11, ../../blocks/products/_products.sass */
+/* line 12, ../../blocks/products/_products.sass */
 .products__list {
-  width: 660px;
+  width: 630px;
   display: inline-block;
   text-align: justify;
   font-size: 0;
 }
 
-/* line 17, ../../blocks/products/_products.sass */
+/* line 18, ../../blocks/products/_products.sass */
 .products__list:after {
   content: " ";
   width: 100%;
   display: inline-block;
 }
 
-/* line 23, ../../blocks/products/_products.sass */
+/* line 24, ../../blocks/products/_products.sass */
 .products__item {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
   text-align: left;
-  background: #141519;
   color: white;
-  box-shadow: 0 8px 6px -6px grey;
-  border: 1px solid #141519;
 }
 
-/* line 37, ../../blocks/products/_products.sass */
+/* line 35, ../../blocks/products/_products.sass */
 .product {
-  width: 213px;
-  height: 200px;
+  width: 150px;
+  height: 180px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  display: block;
+  border: 2px solid white;
 }
 
 /* line 46, ../../blocks/products/_products.sass */
 .product__image {
-  width: 213px;
-  height: 200px;
+  width: 150px;
+  height: 180px;
 }
 
 /* line 50, ../../blocks/products/_products.sass */
 .product__info {
-  width: 213px;
-  height: 200px;
+  width: 150px;
+  height: 180px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 /* line 60, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1 .product__image {
+  transition: all 0.2s linear;
+}
+/* line 63, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__info {
   opacity: 0;
-  background-color: rgba(37, 49, 70, 0.7);
+  background-color: rgba(219, 127, 8, 0.7);
   transition: all 0.4s ease-in-out;
 }
-
-/* line 65, ../../blocks/products/_products.sass */
-.product--skin-thumbnail-1 .product__name {
+/* line 68, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1 .product__ingredients {
   transform: translateY(-100px);
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-
-/* line 70, ../../blocks/products/_products.sass */
-.product--skin-thumbnail-1 .product__description {
+/* line 73, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1 .product__type {
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.2s linear;
 }
-
-/* line 75, ../../blocks/products/_products.sass */
+/* line 78, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1 .product__tasting-notes {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+/* line 82, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1:hover .product__image {
   transform: scale(1.1);
 }
-
-/* line 78, ../../blocks/products/_products.sass */
-.product--skin-thumbnail-1:hover .product__info {
+/* line 85, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1:hover .product__info:hover {
   opacity: 1;
 }
-
-/* line 81, ../../blocks/products/_products.sass */
-.product--skin-thumbnail-1:hover .product__name,
-.product--skin-thumbnail-1:hover .product__description {
+/* line 88, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1:hover .product__ingredients, .product--skin-thumbnail-1:hover .product__type, .product--skin-thumbnail-1:hover .product__tasting-notes {
   opacity: 1;
   transform: translateY(0px);
 }
-
-/* line 86, ../../blocks/products/_products.sass */
-.product--skin-thumbnail-1:hover .product__description {
+/* line 94, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1:hover .product__type {
   transition-delay: 0.1s;
+}
+/* line 97, ../../blocks/products/_products.sass */
+.product--skin-thumbnail-1:hover .product__tasting-notes {
+  transition-delay: 0.2s;
+}
+
+/* line 102, ../../blocks/products/_products.sass */
+.product__ingredients {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+
+/* line 113, ../../blocks/products/_products.sass */
+.product__type {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+
+/* line 122, ../../blocks/products/_products.sass */
+.product__tasting-notes {
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  background: black;
+  color: white;
+  box-shadow: 0 0 1px black;
+}
+/* line 133, ../../blocks/products/_products.sass */
+.product__tasting-notes:hover {
+  box-shadow: 0 0 5px black;
+}
+
+/* line 136, ../../blocks/products/_products.sass */
+.product__name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: blue;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dotted blue;
+}
+
+/* line 149, ../../blocks/products/_products.sass */
+.products-message .products__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 34px;
+  text-align: center;
+}
+/* line 154, ../../blocks/products/_products.sass */
+.products-message .products__tag-line {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 5px;
+}
+/* line 160, ../../blocks/products/_products.sass */
+.products-message p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dotted blue;
 }
 
 /*.tourism
@@ -620,6 +466,69 @@ body {
   padding: 30px;
   background: #3c8dc5;
   height: 300px;
+}
+
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 13, ../../sass_lib/_flag.sass */
+.footer {
+  display: table;
+  width: 100%;
+}
+/* line 17, ../../sass_lib/_flag.sass */
+.footer .footer__text, .footer .footer__social {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 31, ../../sass_lib/_flag.sass */
+.footer .footer__text > img {
+  display: block;
+  max-width: none;
+}
+/* line 35, ../../sass_lib/_flag.sass */
+.footer .footer__social {
+  width: 100%;
+}
+
+/* line 14, ../../blocks/footer/_footer.sass */
+.footer {
+  background-color: black;
+}
+
+/* line 18, ../../blocks/footer/_footer.sass */
+.footer__text {
+  font-size: 14px;
+  line-height: 1.714;
+  font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #7e8aa2;
+}
+
+/* line 25, ../../blocks/footer/_footer.sass */
+.footer__social {
+  height: 35px;
+  width: 35px !important;
 }
 
 /* line 2, ../../blocks/showcase/_showcase.sass */
@@ -662,41 +571,40 @@ body {
 }
 
 /* line 34, ../../blocks/showcase/_showcase.sass */
+.showcase__panel--state-on {
+  display: block;
+}
+
+/* line 37, ../../blocks/showcase/_showcase.sass */
+.showcase__panel--state-off {
+  display: none;
+}
+
+/* line 40, ../../blocks/showcase/_showcase.sass */
+.showcase__link--state-on {
+  background-position: 0 -70px;
+}
+
+/* line 43, ../../blocks/showcase/_showcase.sass */
+.showcase__link--state-off {
+  background-position: 0 0;
+}
+
+/* line 47, ../../blocks/showcase/_showcase.sass */
 .showcase__link {
-  font-family: Baskerville-Regular, Georgia, "Times new roman", Times, serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 13px;
   text-align: center;
   line-height: 70px;
   color: white;
 }
 
-/* line 41, ../../blocks/showcase/_showcase.sass */
-.showcase__panel--state-on {
-  display: block;
-}
-
-/* line 44, ../../blocks/showcase/_showcase.sass */
-.showcase__panel--state-off {
-  display: none;
-}
-
-/* line 47, ../../blocks/showcase/_showcase.sass */
-.showcase__link--state-on {
-  background-position: 0 -70px;
-}
-
-/* line 50, ../../blocks/showcase/_showcase.sass */
-.showcase__link--state-off {
-  background-position: 0 0;
-}
-
-/* line 55, ../../blocks/showcase/_showcase.sass */
+/* line 56, ../../blocks/showcase/_showcase.sass */
 .welcome-message {
   background: url("../images/showcase__image-1.jpg");
 }
 
-/* line 58, ../../blocks/showcase/_showcase.sass */
+/* line 59, ../../blocks/showcase/_showcase.sass */
 .welcome-message__title {
   width: 50%;
   background-color: black;
@@ -709,7 +617,7 @@ body {
   opacity: 0.85;
 }
 
-/* line 67, ../../blocks/showcase/_showcase.sass */
+/* line 68, ../../blocks/showcase/_showcase.sass */
 .welcome-message p {
   width: 50%;
   background-color: black;
@@ -722,7 +630,7 @@ body {
   opacity: 0.85;
 }
 
-/* line 76, ../../blocks/showcase/_showcase.sass */
+/* line 77, ../../blocks/showcase/_showcase.sass */
 .welcome-message p strong {
   font-family: Baskerville-Bold, Georgia, "Times new roman", Times, serif;
   font-weight: 700;
@@ -730,14 +638,14 @@ body {
   font-style: italic;
 }
 
-/* line 80, ../../blocks/showcase/_showcase.sass */
+/* line 81, ../../blocks/showcase/_showcase.sass */
 .welcome-message p em {
   font-family: Baskerville-Italic, Georgia, "Times new roman", Times, serif;
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 85, ../../blocks/showcase/_showcase.sass */
+/* line 86, ../../blocks/showcase/_showcase.sass */
 .wine-oil-tourism {
   background: url("../images/showcase__image-2.jpg");
 }

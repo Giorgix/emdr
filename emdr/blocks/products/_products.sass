@@ -4,12 +4,13 @@
   padding: 45px 15px
 
 .products-message
-  width: 260px
+  width: 290px
+  padding: 0 15px
   display: inline-block
   vertical-align: top
 
 .products__list
-  width: 660px
+  width: 630px
   display: inline-block
   text-align: justify
   font-size: 0 
@@ -25,64 +26,141 @@
   vertical-align: top
   font-size: 16px
   text-align: left
-  background: #141519
   color: white
-  box-shadow: 0 8px 6px -6px grey
-
-  border: 1px solid #141519
+  
 
 //product
-//hover effect base layout rules
+//thumbnail base layout rules
 
 .product 
-  width: 213px
-  height: 200px
+  width: 150px
+  height: 180px
   overflow: hidden
   position: relative
   text-align: center
-  display: block
+
+  border: 2px solid white
+  //box-shadow: 0 8px 6px -6px grey
 
 
 .product__image
-  width: 213px
-  height: 200px
+  width: 150px
+  height: 180px
 
 .product__info 
-  width: 213px
-  height: 200px
+  width: 150px
+  height: 180px
   position: absolute
   top: 0
   left: 0
 
+// thumbnail skin
 
-// skin of hover effect
+.product--skin-thumbnail-1 
+  .product__image  
+    transition: all 0.2s linear
 
-.product--skin-thumbnail-1 .product__info 
-  opacity: 0
-  background-color: rgba(37,49,70, 0.7) 
-  transition: all 0.4s ease-in-out
+  .product__info
+    opacity: 0
+    background-color: rgba(219,127,8, 0.7) 
+    transition: all 0.4s ease-in-out
+                
+  .product__ingredients
+    transform: translateY(-100px)
+    opacity: 0
+    transition: all 0.2s ease-in-out
+                            
+  .product__type 
+    transform: translateY(100px)
+    opacity: 0
+    transition: all 0.2s linear
+                                        
+  .product__tasting-notes
+    opacity: 0
+    transition: all 0.2s ease-in-out
+                                                
+  &:hover .product__image
+    transform: scale(1.1)
+   
+  &:hover .product__info:hover 
+    opacity: 1
+   
+  &:hover .product__ingredients,
+  &:hover .product__type,
+  &:hover .product__tasting-notes
+    opacity: 1
+    transform: translateY(0px)
+                
+  &:hover .product__type
+    transition-delay: 0.1s
+                    
+  &:hover .product__tasting-notes
+    transition-delay: 0.2s
 
-.product--skin-thumbnail-1 .product__name 
-  transform: translateY(-100px)
-  opacity: 0
-  transition: all 0.2s ease-in-out
+// 
 
-.product--skin-thumbnail-1 .product__description 
-  transform: translateY(100px)
-  opacity: 0
-  transition: all 0.2s linear
+.product__ingredients
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 13px
+  font-style: italic
+  color: #fff
+  text-align: center
+  position: relative
+  padding: 10px
+  //background: rgba(0, 0, 0, 0.8)
+  margin: 20px 0 0 0
 
-.product--skin-thumbnail-1:hover .product__image  
-  transform: scale(1.1)
+.product__type
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 11px
+  text-transform: uppercase
+  position: relative
+  color: #fff
+  padding: 10px 20px 20px
+  text-align: center
 
-.product--skin-thumbnail-1:hover .product__info  
-  opacity: 1
+.product__tasting-notes
+  display: inline-block
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 12px
+  text-transform: uppercase
+  //text-decoration: none
+  padding: 7px 14px
+  background: #000
+  color: #fff
+  box-shadow: 0 0 1px #000
+  
+  &:hover 
+    box-shadow: 0 0 5px #000
 
-.product--skin-thumbnail-1:hover .product__name,
-.product--skin-thumbnail-1:hover .product__description 
-  opacity: 1
-  transform: translateY(0px)
+.product__name
+  font-family: Georgia, "Times New Roman", Times, serif
+  font-size: 20px
+  font-weight: 400
+  color: blue
+  text-align: center
+  margin-top: 20px
+  padding-top: 10px
+  border-top: 1px dotted blue
 
-.product--skin-thumbnail-1:hover .product__description 
-  transition-delay: 0.1s
+// product-message
 
+.products-message
+  .products__title
+    font-family: Georgia, "Times New Roman", Times, serif
+    font-size: 34px
+    text-align: center
+
+  .products__tag-line
+    font-family: Georgia
+    font-size: 16px
+    font-weight: 400
+    font-style: italic
+    margin-top: 5px
+  p
+    font-family: Georgia, "Times New Roman", Times, serif
+    font-size: 14px
+    line-height: 20px
+    margin-top: 15px
+    padding-top: 10px
+    border-top: 1px dotted blue // replace this with a border decoration
