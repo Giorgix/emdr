@@ -118,7 +118,7 @@ a {
 
 /* line 1, ../../blocks/page/_page.sass */
 html {
-  background: black;
+  background: #111111;
 }
 
 /* line 4, ../../blocks/page/_page.sass */
@@ -406,11 +406,11 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: 400;
-  color: blue;
+  color: #1e1e1e;
   text-align: center;
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px dotted blue;
+  border-top: 1px dotted #1e1e1e;
 }
 
 /* line 149, ../../blocks/products/_products.sass */
@@ -434,7 +434,7 @@ body {
   line-height: 20px;
   margin-top: 15px;
   padding-top: 10px;
-  border-top: 1px dotted blue;
+  border-top: 1px dotted #1e1e1e;
 }
 
 /*.tourism
@@ -463,7 +463,6 @@ body {
 /* line 26, ../../blocks/tourism/_tourism.sass */
 .tourism {
   padding: 30px;
-  background: #3c8dc5;
   height: 300px;
 }
 
