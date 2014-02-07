@@ -320,7 +320,7 @@ body {
 /* line 63, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__info {
   opacity: 0;
-  background-color: rgba(219, 127, 8, 0.7);
+  background-color: rgba(28, 92, 163, 0.7);
   transition: all 0.4s ease-in-out;
 }
 /* line 68, ../../blocks/products/_products.sass */
@@ -392,7 +392,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   padding: 7px 14px;
-  background: black;
+  background: #111111;
   color: white;
   box-shadow: 0 0 1px black;
 }
