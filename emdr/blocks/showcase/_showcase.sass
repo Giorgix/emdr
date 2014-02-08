@@ -9,7 +9,7 @@
   position: relative 
   box-shadow: 0 8px 6px -6px grey, 0 -8px 6px -6px grey
 
-.showcase__content
+.showcase__panels
   //width: 800px
   height: 100%
 
@@ -51,35 +51,34 @@
   line-height: 70px 
   color: white
 
+.showcase__content
+  background: rgba(1, 1, 1, 0.85)
+  position: absolute
+  top: 5%
+  padding: 30px 15px
+  width: 350px
+  //border: 1px solid white
 
 //welcome-message
 .welcome-message
   background: url('../images/showcase__image-1.jpg')
 
-.welcome-message__title
-  width: 50%
-  background-color: $very-loud
-  +primary--regular
-  @extend %kilo
-  color: $moderately-soft
-  padding: 24px 0 24px 48px
-  +opacity(0.85)
+.welcome-message__title,
+.wine-oil-tourism__title
+  font-size: 40px
+  font-family: Georgia, "Times New Roman"
+  color: #1c5ca3
 
-.welcome-message p
-  width: 50%
-  background-color: $very-loud
-  +primary--italic
-  @extend %unit
-  color: $very-soft
-  padding: 0 0 24px 48px
-  +opacity(0.85)
+.welcome-message,
+.wine-oil-tourism
+  p
+    font-size: 16px
+    font-family: Georgia, "Times New Roman"
+    color: white
 
 .welcome-message p strong
-  +primary--bold
-  font-style: italic
 
 .welcome-message p em
-  +primary--italic  
 
 
 //wine-oil-tourism
