@@ -22,25 +22,22 @@
 
 // layout and spacing
 .nav
-  width: 800px
-  //position: absolute
-  //bottom: 0
-  display: table-cell
-  vertical-align: middle
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  //display: inline-block
+  //vertical-align: top
+  background: url('../images/textures/granular.png')
 
 .nav__list
+  width: 960px
+  margin: 0 auto
   text-align: right
-  font-size: 0
-
-.nav__list:after
-  content: " "
-  width: 100%
-  display: inline-block
-
+ 
 .nav__item
-  line-height: 12px
   display: inline-block
-  padding: 12px
+  padding: 40px 15px 15px 15px
 
 //typography
 .nav__item
@@ -48,18 +45,7 @@
   font-size: 12px
   font-weight: 700
   text-transform: uppercase
-  +text-shadow
-//color
-.nav
-  //background: #224e6d
 
 .nav__link
-  &:link
-    color: $very-soft
-  &:visited
-    color: $very-soft
-  &:hover
-    color: $very-loud
-  &:active
-    color: $moderately-loud
+  color: white
 

@@ -1,0 +1,57 @@
+/*-------- position ----------*/
+
+%left
+  left: 0
+
+%right
+  right: 0
+
+%up
+  top: 0
+
+%down
+  bottom: 0
+
+%up-left
+  @extend %up
+  @extend %left
+
+%up-right
+  @extend %up
+  @extend %right
+
+%down-left
+  @extend %down
+  @extend %left
+
+%down-right
+  @extend %down
+  @extend %right
+
+%left--o
+  right: 100%
+
+%right--o
+  left: 100%
+
+%up--o
+  bottom: 100%
+
+%down--o
+  top: 100%
+
+%up-left--o
+  @extend %up--o
+  @extend %left--o
+
+%up-right--o
+  @extend %up--o
+  @extend %right--o
+
+%down-left--o
+  @extend %down--o
+  @extend %left--o
+
+%down-right--o
+  @extend %down--o
+  @extend %right--o

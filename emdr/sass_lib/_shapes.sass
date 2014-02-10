@@ -1,0 +1,93 @@
+/*------------------------------------------------------------------
+ * [Shape Stylesheet]
+ *
+ * Project: Zilean
+ * Version: 0.1
+ * Last change: 17/11/13 [rising]
+ * Authors: twissell
+ * Primary use: Zilean framework
+ *-------------------------------------------------------------------*/
+
+%shape-base
+  width: 0
+  height: 0
+  border-style: solid
+  border-color: transparent
+
+
+=shape($d, $color, $size...)
+  @extend %shape-base
+
+  @if length($size) == 1
+    border-width: nth($size, 1)
+
+  @else if length($size) == 2
+    border-width: nth($size, 1) nth($size, 2)
+
+  @else if length($size) == 3
+    border-width: nth($size, 1) nth($size, 2) nth($size, 3)
+  
+  @else if length($size) == 4
+    border-width: nth($size, 1) nth($size, 2) nth($size, 3) nth($size, 4)
+
+  @else
+    border-width: null
+
+  @content
+
+
+=arrow($d, $color, $size...)
+  +shape($d, $color, $size...)
+    
+    @if $d == 'left'
+      border-left-color: $color
+    
+    @if $d == 'right'
+      border-right-color: $color
+    
+    @if $d == 'up'
+      border-top-color: $color
+    
+    @if $d == 'down'
+      border-bottom-color: $color
+
+=fold($d, $color, $size...)
+
+  @if $d == 'up-left'
+    +arrow('up', $color)
+    +arrow('left', $color, $size)
+  
+  @if $d == 'up-right'
+    +arrow('up', $color)
+    +arrow('right', $color, $size)
+
+  @if $d == 'down-left'
+    +arrow('down', $color)
+    +arrow('left', $color, $size)
+
+  @if $d == 'down-right'
+    +arrow('down', $color)
+    +arrow('left', $color, $size)
+
+=flag($d, $color, $size...)
+
+  @if $d == 'left'
+    +arrow('up', $color)
+    +arrow('down', $color)
+    +arrow('left', $color, $size)
+  
+  @if $d == 'right'
+    +arrow('up', $color)
+    +arrow('down', $color)
+    +arrow('right', $color, $size)
+  
+  @if $d == 'up'
+    +arrow('up', $color)
+    +arrow('left', $color)
+    +arrow('right', $color, $size)
+  
+  @if $d == 'down'
+    +arrow('left', $color)
+    +arrow('right', $color)
+    +arrow('down', $color, $size)
+   

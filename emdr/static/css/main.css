@@ -9,7 +9,7 @@
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 17, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -118,66 +118,49 @@ a {
 
 /* line 1, ../../blocks/page/_page.sass */
 html {
-  background: #111111;
+  background-image: url("../images/textures/light_background.png");
 }
 
 /* line 4, ../../blocks/page/_page.sass */
 body {
-  border-top: 3px solid #111111;
   background-image: url("../images/header__background.gif");
   background-repeat: no-repeat;
 }
 
-/* line 9, ../../blocks/page/_page.sass */
-.page {
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 13, ../../blocks/logo/_logo.sass */
+.logo {
   width: 960px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 2, ../../blocks/header/_header.sass */
-.header {
-  display: table;
-  /* triggers a new positioning context 
-   * used by nav.
-   */
-}
-
-/*------------------------------------------------------------------
- * [Title Stylesheet]
- *
- * Project:	project-name
- * Version:	0.1
- * Last change:	05/02/08 
- * Author:	twissell
- * Primary use:	app-name
- * Acknowledgments:
- *
- *------------------------------------------------------------------- */
-/* line 14, ../../blocks/logo/_logo.sass */
+/* line 19, ../../blocks/logo/_logo.sass */
 .logo__image {
-  height: 150px;
+  height: 94px;
   width: 150px;
-}
-
-/* line 18, ../../blocks/logo/_logo.sass */
-.logo {
-  display: table-cell;
-}
-
-/* line 1, ../../blocks/content/_content.sass */
-.content {
-  background: #e9f2f9;
 }
 
 /* extract from here the justify pattern,
@@ -201,55 +184,114 @@ body {
  */
 /* line 24, ../../blocks/nav/_nav.sass */
 .nav {
-  width: 800px;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 31, ../../blocks/nav/_nav.sass */
-.nav__list {
-  text-align: right;
-  font-size: 0;
-}
-
-/* line 35, ../../blocks/nav/_nav.sass */
-.nav__list:after {
-  content: " ";
   width: 100%;
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/textures/granular.png");
 }
 
-/* line 40, ../../blocks/nav/_nav.sass */
+/* line 33, ../../blocks/nav/_nav.sass */
+.nav__list {
+  width: 960px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* line 38, ../../blocks/nav/_nav.sass */
 .nav__item {
-  line-height: 12px;
   display: inline-block;
-  padding: 12px;
+  padding: 40px 15px 15px 15px;
 }
 
-/* line 46, ../../blocks/nav/_nav.sass */
+/* line 43, ../../blocks/nav/_nav.sass */
 .nav__item {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px black;
 }
 
-/* line 57, ../../blocks/nav/_nav.sass */
-.nav__link:link {
+/* line 49, ../../blocks/nav/_nav.sass */
+.nav__link {
   color: white;
 }
-/* line 59, ../../blocks/nav/_nav.sass */
-.nav__link:visited {
+
+/*------------------------------------------------------------------
+ * [Title Stylesheet]
+ *
+ * Project:	project-name
+ * Version:	0.1
+ * Last change:	05/02/08 
+ * Author:	twissell
+ * Primary use:	app-name
+ * Acknowledgments:
+ *
+ *------------------------------------------------------------------- */
+/* line 13, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message {
+  width: 960px;
+  margin: 0 auto;
+  padding: 45px 490px 45px 0;
+}
+
+/* line 18, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message__title {
+  font-size: 40px;
+  font-family: Georgia;
   color: white;
 }
-/* line 61, ../../blocks/nav/_nav.sass */
-.nav__link:hover {
-  color: black;
+
+/* line 23, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message__tag-line {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  font-family: Georgia;
+  padding: 15px;
+  line-height: 1.5;
+  color: white;
 }
-/* line 63, ../../blocks/nav/_nav.sass */
-.nav__link:active {
-  color: #263248;
+
+/* line 1, ../../blocks/content/_content.sass */
+.content {
+  background: #e9f2f9;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 6, ../../blocks/content/_content.sass */
+.letter {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* line 11, ../../blocks/content/_content.sass */
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+/* line 18, ../../blocks/content/_content.sass */
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+
+/* line 25, ../../blocks/content/_content.sass */
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
 }
 
 /* line 3, ../../blocks/products/_products.sass */
@@ -270,7 +312,7 @@ body {
 .products__list {
   width: 630px;
   display: inline-block;
-  text-align: justify;
+  text-align: right;
   font-size: 0;
 }
 
@@ -288,6 +330,7 @@ body {
   font-size: 16px;
   text-align: left;
   color: white;
+  margin-left: 30px;
 }
 
 /* line 36, ../../blocks/products/_products.sass */
@@ -466,7 +509,6 @@ body {
 /* line 26, ../../blocks/tourism/_tourism.sass */
 .tourism {
   padding: 30px;
-  background-image: url("../images/vineyard.jpg");
   height: 350px;
   background-size: 100% 350px;
 }
@@ -510,108 +552,6 @@ body {
  *------------------------------------------------------------------- */
 /* line 13, ../../blocks/footer/_footer.sass */
 .footer {
-  height: 200px;
-}
-
-/* line 2, ../../blocks/showcase/_showcase.sass */
-.showcase {
-  height: 370px;
-  border: 10px solid white;
-  /* triggers a new positioning 
-   * context.
-   */
-  position: relative;
-  box-shadow: 0 8px 6px -6px grey, 0 -8px 6px -6px grey;
-}
-
-/* line 12, ../../blocks/showcase/_showcase.sass */
-.showcase__panels {
-  height: 100%;
-}
-
-/* line 16, ../../blocks/showcase/_showcase.sass */
-.showcase__panel {
-  height: 100%;
-  display: none;
-}
-
-/* line 20, ../../blocks/showcase/_showcase.sass */
-.showcase__list {
-  width: 210px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* line 27, ../../blocks/showcase/_showcase.sass */
-.showcase__link {
-  height: 70px;
-  display: block;
-  padding-left: 20px;
-  background: url("../images/showcase-menu__link.png") rgba(0, 0, 0, 0);
-}
-
-/* line 34, ../../blocks/showcase/_showcase.sass */
-.showcase__panel--state-on {
-  display: block;
-}
-
-/* line 37, ../../blocks/showcase/_showcase.sass */
-.showcase__panel--state-off {
-  display: none;
-}
-
-/* line 40, ../../blocks/showcase/_showcase.sass */
-.showcase__link--state-on {
-  background-position: 0 -70px;
-}
-
-/* line 43, ../../blocks/showcase/_showcase.sass */
-.showcase__link--state-off {
-  background-position: 0 0;
-}
-
-/* line 47, ../../blocks/showcase/_showcase.sass */
-.showcase__link {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 13px;
-  text-align: center;
-  line-height: 70px;
-  color: white;
-}
-
-/* line 54, ../../blocks/showcase/_showcase.sass */
-.showcase__content {
-  background: rgba(1, 1, 1, 0.85);
-  position: absolute;
-  top: 5%;
-  padding: 30px 15px;
-  width: 350px;
-}
-
-/* line 63, ../../blocks/showcase/_showcase.sass */
-.welcome-message {
-  background: url("../images/showcase__image-1.jpg");
-}
-
-/* line 66, ../../blocks/showcase/_showcase.sass */
-.welcome-message__title,
-.wine-oil-tourism__title {
-  font-size: 40px;
-  font-family: Georgia, "Times New Roman";
-  color: #1c5ca3;
-}
-
-/* line 74, ../../blocks/showcase/_showcase.sass */
-.welcome-message p,
-.wine-oil-tourism p {
-  font-size: 16px;
-  font-family: Georgia, "Times New Roman";
-  color: white;
-}
-
-/* line 85, ../../blocks/showcase/_showcase.sass */
-.wine-oil-tourism {
-  background: url("../images/showcase__image-2.jpg");
+  height: 350px;
+  background-image: url("../images/textures/granular.png");
 }

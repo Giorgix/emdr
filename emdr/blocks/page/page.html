@@ -7,35 +7,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
-    <div class="page">
     {% block page %}{% endblock %}
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-      // move this code to his own block
-      // see how to import js files with jquery
-      $('.showcase__link').click(function(event) {
-        event.preventDefault();
-       
-	// deactivate the current panel
-        current_panel = $('.showcase__panel--state-on');
-	current_panel.removeClass('showcase__panel--state-on');
-        // deactivate the current link
-	current_link = $('.showcase__link--state-on');
-	current_link.removeClass('showcase__link--state-on');
-
-        // take the panel name
-	panel_name = $(this).attr('href');
-        panel_name = panel_name.replace('#', ''); 
-        panel_name = '.showcase__panel.' + panel_name; 
-
-        // show the activate panel	
-	panel_active = $(panel_name);
-        panel_active.addClass('showcase__panel--state-on');
-
-        // hold hover state for link
-	$(this).addClass('showcase__link--state-on');
-      }) 
-    </script>
   </body>
 </html>
