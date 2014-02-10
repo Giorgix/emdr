@@ -19,6 +19,8 @@
  *  of this pattern.
  */
 
+@import '../../sass_lib/layout'
+
 
 // layout and spacing
 .nav
@@ -31,8 +33,7 @@
   background: url('../images/textures/granular.png')
 
 .nav__list
-  width: 960px
-  margin: 0 auto
+  @extend %center
   text-align: right
  
 .nav__item

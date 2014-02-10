@@ -123,7 +123,7 @@ html {
 
 /* line 4, ../../blocks/page/_page.sass */
 body {
-  background-image: url("../images/header__background.gif");
+  background-image: url("../images/header__background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -149,17 +149,21 @@ body {
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 13, ../../blocks/logo/_logo.sass */
-.logo {
+/* line 1, ../../sass_lib/_layout.sass */
+.logo, .nav__list, .welcome-message, .content {
   width: 960px;
   margin: 0 auto;
+}
+
+/* line 15, ../../blocks/logo/_logo.sass */
+.logo {
   position: relative;
   z-index: 1;
 }
 
-/* line 19, ../../blocks/logo/_logo.sass */
+/* line 20, ../../blocks/logo/_logo.sass */
 .logo__image {
-  height: 94px;
+  height: 136px;
   width: 150px;
 }
 
@@ -182,7 +186,13 @@ body {
  *  see block products to another use
  *  of this pattern.
  */
-/* line 24, ../../blocks/nav/_nav.sass */
+/* line 1, ../../sass_lib/_layout.sass */
+.logo, .nav__list, .welcome-message, .content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 26, ../../blocks/nav/_nav.sass */
 .nav {
   width: 100%;
   position: absolute;
@@ -191,20 +201,18 @@ body {
   background: url("../images/textures/granular.png");
 }
 
-/* line 33, ../../blocks/nav/_nav.sass */
+/* line 35, ../../blocks/nav/_nav.sass */
 .nav__list {
-  width: 960px;
-  margin: 0 auto;
   text-align: right;
 }
 
-/* line 38, ../../blocks/nav/_nav.sass */
+/* line 39, ../../blocks/nav/_nav.sass */
 .nav__item {
   display: inline-block;
   padding: 40px 15px 15px 15px;
 }
 
-/* line 43, ../../blocks/nav/_nav.sass */
+/* line 44, ../../blocks/nav/_nav.sass */
 .nav__item {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -212,7 +220,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 49, ../../blocks/nav/_nav.sass */
+/* line 50, ../../blocks/nav/_nav.sass */
 .nav__link {
   color: white;
 }
@@ -228,21 +236,25 @@ body {
  * Acknowledgments:
  *
  *------------------------------------------------------------------- */
-/* line 13, ../../blocks/welcome_message/_welcome_message.sass */
-.welcome-message {
+/* line 1, ../../sass_lib/_layout.sass */
+.logo, .nav__list, .welcome-message, .content {
   width: 960px;
   margin: 0 auto;
+}
+
+/* line 15, ../../blocks/welcome_message/_welcome_message.sass */
+.welcome-message {
   padding: 45px 490px 45px 0;
 }
 
-/* line 18, ../../blocks/welcome_message/_welcome_message.sass */
+/* line 19, ../../blocks/welcome_message/_welcome_message.sass */
 .welcome-message__title {
   font-size: 40px;
-  font-family: Georgia;
+  font-family: Georgia, "Times New Roman";
   color: white;
 }
 
-/* line 23, ../../blocks/welcome_message/_welcome_message.sass */
+/* line 24, ../../blocks/welcome_message/_welcome_message.sass */
 .welcome-message__tag-line {
   font-size: 16px;
   font-style: italic;
@@ -253,21 +265,25 @@ body {
   color: white;
 }
 
-/* line 1, ../../blocks/content/_content.sass */
-.content {
-  background: #e9f2f9;
+/* line 1, ../../sass_lib/_layout.sass */
+.logo, .nav__list, .welcome-message, .content {
   width: 960px;
   margin: 0 auto;
 }
 
-/* line 6, ../../blocks/content/_content.sass */
+/* line 3, ../../blocks/content/_content.sass */
+.content {
+  background: #e9f2f9;
+}
+
+/* line 7, ../../blocks/content/_content.sass */
 .letter {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
 }
 
-/* line 11, ../../blocks/content/_content.sass */
+/* line 12, ../../blocks/content/_content.sass */
 .letter:before, .letter:after {
   content: "";
   height: 98%;
@@ -276,7 +292,7 @@ body {
   z-index: -1;
 }
 
-/* line 18, ../../blocks/content/_content.sass */
+/* line 19, ../../blocks/content/_content.sass */
 .letter:before {
   background: #fafafa;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -285,9 +301,10 @@ body {
   transform: rotate(-2.5deg);
 }
 
-/* line 25, ../../blocks/content/_content.sass */
+/* line 26, ../../blocks/content/_content.sass */
 .letter:after {
-  background: #f6f6f6;
+  background-color: #e9f2f9;
+  background-image: url("../images/textures/paper_fibers.png");
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   right: -3px;
   top: 1px;
@@ -296,61 +313,61 @@ body {
 
 /* line 3, ../../blocks/products/_products.sass */
 .products {
-  padding: 45px 15px;
+  padding: 45px 0 90px 0;
   background: url("../images/products__background.png") no-repeat;
 }
 
 /* line 7, ../../blocks/products/_products.sass */
 .products-message {
-  width: 290px;
-  padding: 0 15px;
+  width: 40%;
+  padding: 0 25px;
   display: inline-block;
   vertical-align: top;
 }
 
 /* line 13, ../../blocks/products/_products.sass */
 .products__list {
-  width: 630px;
+  width: 60%;
+  padding: 0 25px;
   display: inline-block;
   text-align: right;
   font-size: 0;
 }
 
-/* line 19, ../../blocks/products/_products.sass */
+/* line 20, ../../blocks/products/_products.sass */
 .products__list:after {
   content: " ";
   width: 100%;
   display: inline-block;
 }
 
-/* line 25, ../../blocks/products/_products.sass */
+/* line 26, ../../blocks/products/_products.sass */
 .products__item {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
   text-align: left;
   color: white;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
-/* line 36, ../../blocks/products/_products.sass */
+/* line 37, ../../blocks/products/_products.sass */
 .product {
   width: 150px;
   height: 180px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  background: white;
   border: 2px solid white;
 }
 
-/* line 47, ../../blocks/products/_products.sass */
+/* line 48, ../../blocks/products/_products.sass */
 .product__image {
   width: 150px;
   height: 180px;
 }
 
-/* line 51, ../../blocks/products/_products.sass */
+/* line 52, ../../blocks/products/_products.sass */
 .product__info {
   width: 150px;
   height: 180px;
@@ -359,56 +376,56 @@ body {
   left: 0;
 }
 
-/* line 61, ../../blocks/products/_products.sass */
+/* line 62, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__image {
   transition: all 0.2s linear;
 }
-/* line 64, ../../blocks/products/_products.sass */
+/* line 65, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__info {
   opacity: 0;
   background-color: rgba(28, 92, 163, 0.7);
   transition: all 0.4s ease-in-out;
 }
-/* line 69, ../../blocks/products/_products.sass */
+/* line 70, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__ingredients {
   transform: translateY(-100px);
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-/* line 74, ../../blocks/products/_products.sass */
+/* line 75, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__type {
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.2s linear;
 }
-/* line 79, ../../blocks/products/_products.sass */
+/* line 80, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1 .product__tasting-notes {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-/* line 83, ../../blocks/products/_products.sass */
+/* line 84, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1:hover .product__image {
   transform: scale(1.1);
 }
-/* line 86, ../../blocks/products/_products.sass */
+/* line 87, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1:hover .product__info:hover {
   opacity: 1;
 }
-/* line 89, ../../blocks/products/_products.sass */
+/* line 90, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1:hover .product__ingredients, .product--skin-thumbnail-1:hover .product__type, .product--skin-thumbnail-1:hover .product__tasting-notes {
   opacity: 1;
   transform: translateY(0px);
 }
-/* line 95, ../../blocks/products/_products.sass */
+/* line 96, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1:hover .product__type {
   transition-delay: 0.1s;
 }
-/* line 98, ../../blocks/products/_products.sass */
+/* line 99, ../../blocks/products/_products.sass */
 .product--skin-thumbnail-1:hover .product__tasting-notes {
   transition-delay: 0.2s;
 }
 
-/* line 103, ../../blocks/products/_products.sass */
+/* line 104, ../../blocks/products/_products.sass */
 .product__ingredients {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 13px;
@@ -420,7 +437,7 @@ body {
   margin: 20px 0 0 0;
 }
 
-/* line 114, ../../blocks/products/_products.sass */
+/* line 115, ../../blocks/products/_products.sass */
 .product__type {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 11px;
@@ -431,7 +448,7 @@ body {
   text-align: center;
 }
 
-/* line 123, ../../blocks/products/_products.sass */
+/* line 124, ../../blocks/products/_products.sass */
 .product__tasting-notes {
   display: inline-block;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -442,12 +459,12 @@ body {
   color: white;
   box-shadow: 0 0 1px black;
 }
-/* line 134, ../../blocks/products/_products.sass */
+/* line 135, ../../blocks/products/_products.sass */
 .product__tasting-notes:hover {
   box-shadow: 0 0 5px black;
 }
 
-/* line 137, ../../blocks/products/_products.sass */
+/* line 138, ../../blocks/products/_products.sass */
 .product__name {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
@@ -456,31 +473,29 @@ body {
   text-align: center;
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px dotted #1e1e1e;
 }
 
-/* line 150, ../../blocks/products/_products.sass */
+/* line 151, ../../blocks/products/_products.sass */
 .products-message .products__title {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 34px;
-  text-align: center;
 }
-/* line 155, ../../blocks/products/_products.sass */
+/* line 156, ../../blocks/products/_products.sass */
 .products-message .products__tag-line {
   font-family: Georgia;
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
   margin-top: 5px;
+  text-indent: 1em;
 }
-/* line 161, ../../blocks/products/_products.sass */
+/* line 163, ../../blocks/products/_products.sass */
 .products-message p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 20px;
   margin-top: 15px;
   padding-top: 10px;
-  border-top: 1px dotted #1e1e1e;
 }
 
 /*.tourism
@@ -508,35 +523,53 @@ body {
  */
 /* line 26, ../../blocks/tourism/_tourism.sass */
 .tourism {
-  padding: 30px;
-  height: 350px;
+  padding: 25px;
+  min-height: 450px;
   background-size: 100% 350px;
 }
 
-/* line 34, ../../blocks/tourism/_tourism.sass */
-.tourism .tourism__header, .tourism p {
-  background: #e9f2f9;
-  padding: 30px;
+/* line 32, ../../blocks/tourism/_tourism.sass */
+.tourism__image {
+  width: 40%;
+  display: inline-block;
+  background: red;
+  height: 450px;
 }
 
 /* line 38, ../../blocks/tourism/_tourism.sass */
-.tourism__header {
-  padding: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+.tourism__text {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px;
 }
 
-/* line 42, ../../blocks/tourism/_tourism.sass */
+/* line 45, ../../blocks/tourism/_tourism.sass */
+.tourism .tourism__header, .tourism p {
+  background: #e9f2f9;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+/* line 50, ../../blocks/tourism/_tourism.sass */
 .tourism__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 34px;
-  background: #f2fbff;
 }
 
-/* line 46, ../../blocks/tourism/_tourism.sass */
+/* line 55, ../../blocks/tourism/_tourism.sass */
 .tourism__tag-line {
-  background: #f2fbff;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
+}
+
+/* line 62, ../../blocks/tourism/_tourism.sass */
+.tourism p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /*------------------------------------------------------------------
